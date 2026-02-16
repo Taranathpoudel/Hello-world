@@ -1,0 +1,2221 @@
+// Previous content of constants.ts remains exactly the same until the end of "operational_modes" array in instructionsObject. 
+// I need to fetch the file content first to append correctly, but since I am rewriting the file, I will include the full previous content + the new mode.
+
+const CHECKING_MD = `### Guidelines for Evaluators
+
+When an evaluator receives answer sheets for grading, they must pay special attention to the following points:
+
+* **Verifying the Count**: The evaluator should confirm that they have received the correct number of answer sheets as listed in the letter provided by the commission. If there is a discrepancy, they must immediately inform the relevant department.
+* **Grading Standards**: To ensure objective evaluation, answer sheets should be categorized and graded based on a standardized scale:
+    * **Unsuitable**: Less than 40%
+    * **Average**: 40% to 50%
+    * **Medium**: 50% to 60%
+    * **High**: 60% to 70%
+    * **Very High**: 70% and above
+* **Adherence to Mark Scheme**: The grading must be done according to the provided mark scheme.
+* **Justifying High Scores**: The evaluator must consider the subject matter requested by the questions and ensure the marks align with the assigned weight. For subjective papers, if a candidate scores very high marks on a section, paper, subject, or question (except for a single section with multiple questions), the reason for the high score must be noted in the "remarks" column of the marks table.
+* **Objective and Mathematical Answers**: For objective-type questions and mathematics, a reason for a high score is not required, and it will not affect the mark calculation.
+* **Re-evaluation**: The evaluator must re-evaluate the top 10% of the answer sheets with the highest marks to confirm their scores.
+* **Use of Red Ink**: Evaluators should use red ink for grading and provide marks in the margins whenever possible.
+* **Dual Evaluation**: If an answer sheet is to be graded by two evaluators, the first evaluator should not make any marks on the answer sheet itself but instead record the marks in a separate table.
+* **Correcting Marks**: If any marks are scratched out, the evaluator must also write the score in words next to the correction.
+
+---
+
+### Breakdown of Evaluation Criteria
+
+This document also provides a breakdown of the criteria used for evaluating answer sheets, explaining the weighting for different aspects and giving examples based on total marks.
+
+* **Content and Logical Expression**: This is given a **45%** weighting. For example, on a 5-mark question, this would be worth 3.75 marks; for a 10-mark question, it would be 4.50 marks; for a 15-mark question, 6.75 marks; and for a 25-mark question, 11.25 marks.
+* **Originality**: This is given a **30%** weighting. For a 5-mark question, this would be worth 1.25 marks; for a 10-mark question, 3.00 marks; for a 15-mark question, 4.50 marks; and for a 25-mark question, 7.50 marks.
+* **Analysis and Criticism**: This is given a **15%** weighting. For a 5-mark question, this would be 0.75 marks; for a 10-mark question, 1.50 marks; for a 15-mark question, 2.25 marks; and for a 25-mark question, 3.75 marks.
+* **Presentation**: This is given a **5%** weighting. For a 5-mark question, this would be 0.25 marks; for a 10-mark question, 0.50 marks; for a 15-mark question, 0.75 marks; and for a 25-mark question, 1.25 marks.
+* **Spelling and Cleanliness**: This is also given a **5%** weighting. For a 5-mark question, this would be 0.25 marks; for a 10-mark question, 0.50 marks; for a 15-mark question, 0.75 marks; and for a 25-mark question, 1.25 marks.
+
+In total, these five criteria add up to **100%** of the total marks for the answer sheet.`;
+
+const OLD_QUESTION_CIVIL_ENGINEERING_MD =  `# Content from Page 1
+
+
+प्रदेश लोक सेवा आयोग
+सुदूरपश्चिम प्रदेश
+प्रदेश निजामती सेवा अन्तर्गत प्रदेश ईन्जिनियरिङ्ग सेवा, सिभिल समूह, जनरल/हाइवे/स्यानीटरी/ईरिगेशन/हाइड्रोपावर उपसमूह, सातौँ तह, ईन्जिनियर पदको आ.प्र., अन्ता तह र खुल्ला तथा समावेशी प्रतियोगितात्मक लिखित परीक्षा
+परीक्षा मिति: २०८२/०१/२६
+
+**समय :- ३ घण्टा**
+**पत्र:- द्वितीय**
+**पूर्णाङ्क :- १००**
+**विषय: Technical Subject**
+
+निम्न प्रश्नहरुको उत्तर Section अनुसार छुट्टाछुट्टै उत्तरपुस्तिकामा लेख्नु पर्नेछ, अन्यथा उत्तरपुस्तिका रद्द हुनेछ ।
+
+### Section (A)
+
+1.  Do you agree that the Limit State Method is more preferred in RCC structure design over the Working Stress Method? If so, why this method is preferred? Give two advantages of Working Stress Method. [3+2]
+2.  Explain the basic requirements for earthquake-resistant building construction. Discuss the role of redundancy and ductility in seismic design. [6+4]
+3.  What are the stability requirements of a cantilever retaining walls? Describe the proportioning of different components of a cantilever retaining wall. Mention those mandatory thumb rules with the help of sketches. [3+3+4]
+4.  Briefly explain the different factors affecting the selection of different types of foundations. [5]
+
+### Section (B)
+
+5.  Describe the process of sediment data collection and explain how a sediment rating curve is prepared. How is sediment yield and concentration estimated from this data? [5]
+6.  What are the different types of aqueducts based on the canal cross-section at the crossing? Where will you adopt each type of aqueducts? Discuss the suitability of syphon aqueducts and level crossing. [2+4+4]
+7.  Describe briefly with sketches about the components of pump storage type of hydropower projects. What are the factors to be considered for selection of dam, based on construction material, topography, economy and purpose? [5+5]
+
+### Section (C)
+
+8.  Describe about the types of bitumen used for a prime coat, their selection and favorable condition for each type of bitumen. [5]
+9.  Describe the critical factors influencing the design and construction of hill roads. Explain any four factors that contribute to the safety, stability and functionality of hill roads. [10]
+10. What are the major components of airport drainage system? How runoff is determined? Describe briefly the surface drainage system. [4+3+3]
+
+### Section (D)
+
+11. Classify and explain various methods of sewage treatment, highlighting the importance of secondary treatment in wastewater management. Also define BOD removal efficiency and discuss the design criteria for achieving effective removal in biological treatment systems. [5+5]
+12. Define BES (Brief Environmental Study), IEE (Initial Environmental Examination), EIA (Environmental Impact Assessment) and Supplementary environmental impact assessment. Explain the importance of EIA in water supply and sanitation projects. [4+6]
+
+« «The End» »
+
+# प्रदेश लोक सेवा आयोग
+## बागमति प्रदेश
+### इन्जिनियरिङ सेवा, सिभिल समूह, सातौ तह, इन्जिनियर पदको खुला प्रतियोगितात्मक लिखित परीक्षा
+**परिक्षा मिति:** २०८२/०८/१२
+
+**पत्र:** द्वितीय
+**विषय:** सर्भे सम्बन्धी
+**पूर्णांक:** १००
+**समय:** ३ घण्टा
+
+**निर्देशन:** निम्न प्रश्नहरुको उत्तर Section अनुसार छुट्टाछुट्टै उत्तरपुस्तिकामा लेख्नु पर्नेछ, अन्यथा उत्तरपुस्तिका रद्द हुनेछ।
+
+---
+
+## Section - A
+
+1.  Describe the various types of slope failures and their causes in brief. [30 Marks]
+2.  Introduce bearing capacity of soil. What are the effects of ground water table in the bearing capacity of different types soil? [2+3]
+3.  Define singly reinforced and doubly reinforced rectangular concrete sections. Where and when are they used in construction works? Derive an equation for moment of resistance for a balanced section. [2+3+5]
+4.  The undisturbed soil at a borrow pit has a water content of 15 percent, void ratio of 0.60 and specific gravity of solids 2.70. The soil from the borrow pit is to be used for the construction of an embankment with a finished volume of 40,000 cum. The specifications for the embankment require a water content of 18 percent and a dry unit weight of 1.76 g/cc. Calculate the quantity of soil required to be excavated from the borrow pit for the construction of the embankment. [10]
+
+## Section - B
+
+5.  Define unit hydrograph. Explain its assumptions and limitations in flood forecasting for Nepalese rivers. [1+4]
+6.  Introduce the concept of duty, delta and base period. Describe different methods of irrigation - surface, sprinkler and drip with their advantages, limitations and suitability in different agro-climatic zones of Nepal. [1+4]
+7.  Describe the functions and components of a de-sanding basin in a hydropower project. Explain the design considerations for sediment flushing in the de-sanding basin. [5+5]
+
+## Section - C
+
+8.  Explain the factors governing the alignment of roads in hilly terrain of Nepal. [5]
+9.  The speed of overtaking and overtaken vehicles are 70 and 40 kmph respectively on a two-way traffic. If the acceleration of overtaking vehicle is 0.99m/sec².
+    a.  Calculate the safe overtaking sight distance.
+    b.  Mention the minimum length of overtaking zone with a neat sketch of overtaking zone showing position of sign post. [5]
+10. Explain in brief the difference between flexible and rigid pavements and their suitability over each other. Write down the stepwise procedure of constructing asphalt concrete pavement in short. [5+5]
+
+## Section - D
+
+11. Describe the coagulation-flocculation process in water treatment. Differentiate between slow sand and rapid sand filters. Explain the cleaning mechanism of rapid sand filters. [3+3+4]
+12. Mention different types of environmental studies required before any construction activities as per existing EPA 2076 and EPR 2077. Write down the stepwise procedure for EIA study and its approval. [4+6]
+
+---
+समाप्त •
+
+***
+
+# प्रदेश लोक सेवा आयोग
+## गण्डकी प्रदेश
+### स्थानीय इन्जिनियरिङ सेवा, सिभिल समूह, सातौ तह, इन्जिनियर पदको खुला प्रतियोगितात्मक लिखित परीक्षा
+**परिक्षा मिति:** २०८१/०२/०५
+
+**समय:** ३ घण्टा
+**पत्र:** द्वितीय
+**पूर्णांक:** १००
+
+**निर्देशन:** निम्न प्रश्नहरुको उत्तर Section अनुसार छुट्टाछुट्टै उत्तरपुस्तिकामा लेख्नु पर्नेछ, अन्यथा उत्तरपुस्तिका रद्द हुनेछ।
+
+---
+
+## Section-A
+
+1.  Explain the sequences of construction of a post-tensioned prestressed concrete bridge and the materials required for prestressing. [5]
+2.  Explain the concept of ductility in earthquake-resistant design. Why is it so important in RC structures? [5]
+3.  Explain the effect of torsion on a building that is asymmetric both in vertical section and plan when seismic forces are applied? [10]
+4.  Define and explain optimum moisture content (OMC). Why is it important in road construction? Explain the methods for controlling moisture in the field. [3+3+4=10]
+
+## Section-B
+
+5.  Write a short note on Bernoulli's equation and its engineering applications. [5]
+6.  List out the major activities to be carried out for a feasibility study of a hydropower project. Summarise the purposes of sub-surface exploration and its process. [5+5=10]
+7.  Explain the type of concrete suitable for the construction of a concrete dam. How are the properties of concrete made suitable for use in such conditions. [5+5=10]
+
+## Section-C
+
+8.  What are the key challenges faced in the maintenance of highway infrastructure in Nepal? [5]
+9.  Answer the following:
+    a.  Discuss the various types of bituminous materials used in highway construction.
+    b.  Explain the significance of aggregate gradation and the tests conducted to ensure the strength and durability of the materials used. [5+5=10]
+10. What are the causes of traffic congestion in cities? Suggest various methods to manage high volume traffic in urban roads. [5+5=10]
+
+## Section-D
+
+11. What are the major sources of potable water supply? How could these sources be protected both quantitatively and qualitatively? Suggest the measures and management plan with reasons. [4+3+3=10]
+12. Solid waste management (SWM) remains one of the most challenging urban service-delivery systems in Nepalese townships. Describe the major technical, operational and institutional problems faced by municipalities in managing solid waste in Nepal. [10]
+
+---
+-The End-
+
+## लोक सेवा आयोग
+### स्थानीय तह अन्तर्गत प्राविधिकतर्फ इञ्जिनियरिङ्ग सेवा, सिभिल समूह, छैठौं तह, इंडिजनियर पदको प्रतियोगितात्मक लिखित परीक्षा
+**मिति:** २०८६/०५/१३
+**पत्र:** द्वितीय
+**विषय:** जनरल इञ्जिनियरिङ्ग
+**समय:** ३ घण्टा
+**पूर्णाङ्क:** १
+
+**निर्देशन:** निम्न प्रश्नहरुको उत्तर खण्ड (Section) अनुसार छुट्टाछुट्टै उत्तरपुस्तिकामा लेख्नुपर्नेछ, अन्यथा उत्तरपुस्तिका रद्द हुनेछ । परीक्षामा मोवाइल वा यस्तै सञ्चार उपकरणहरू प्रयोग गर्न पाइने छैन ।
+
+### खण्ड (Section) - A
+
+1.  Mention different types of road pavements. Explain how you would design an appropriate pavement for a hill road. (3+7)
+2.  Write down some methods of Bio-engineering practices along hill side of Nepal.
+3.  (a) What are the various criteria that should be fulfilled while designing sub-surface drains?
+    (b) What are the various tests that are used for assessing the suitability of road aggregates?
+
+### खण्ड (Section) – B
+
+4.  (a) What are the different types of distribution service reservoir used in water supply project in Nepal? How its storage capacity is determined?
+    (b) What is self-clearing velocity and non-scouring velocity in a sewer? Why sewers are not designed to full flow?
+5.  Write down short note on:
+    (a) Sources of solid waste
+    (b) Design features of septic tank
+    (c) Various types of joints used in pipes
+
+### खण्ड (Section) – C
+
+6.  Why river training is necessary? Describe the various methods of river control.
+7.  (a) What is berm? Why is it provided in the canal?
+    (b) Draw sketches to show the section of canal.
+    i) Partly in cutting and partly in filling
+    ii) Wholly in cutting
+    iii) Wholly in filling
+8.  (a) What types of alternative energy systems are feasible in Nepal? (2+2)
+    (b) Explain with the help of a neat sketch the hydrological cycle.
+
+### खण्ड (Section) – D
+
+9.  Differentiate Environmental Impact Assessment (EIA) with Initial Environmental Examination (IEE).
+10. Explain with neat sketches the method of setting out of a school building in a municipal area.
+
+<<<<<<< The End >>>>>>>
+
+# Content from Page 2
+
+## लोक सेवा आयोग
+### नेपाल इञ्जिनियरिङ्ग सेवा, सिभिल समूह, विभिन्न उपसमूह
+**पद:** राजपत्राङ्कित तृतीय श्रेणी प्राविधिक पदको प्रतियोगितात्मक लिखित परीक्षा
+**मिति:** 2064/92/9
+**पत्र:** द्वितीय
+**विषय:** Technical Subject
+**समय:** ३ घण्टा
+**पूर्णाङ्क:** १००
+
+**निर्देशन:** तलका प्रश्नहरुको उत्चर Section अनुसार छुटापुहै उतरपुस्तिकामा लेख्नुपर्नेछ, अन्यथा उत्तरपुस्तिका रद्द हुनेछ ।
+
+### Section-A
+
+1.  Briefly describe the requirements of earthquake resistant building construction.
+2.  Define soil compaction and consolidation. What are the factors affecting soil compaction?
+3.  What are different factors to be considered in designing foundation for buildings? Explain about different types of foundations used in commercial buildings? (10)
+4.  (a) What do you mean by economical span length of a bridge? Explain. (2)
+    (b) What types of loads are required to be considered while designing a road bridge? (5)
+    (c) Describe the classification of steelbridge with their suitability to use considering the span length. (3)
+
+### Section - B
+
+5.  The slope of channel in alluvium is S=1 in 5000; Lacey's silt factor = 0.9 and channel side slope = 0.5:1, find the channel section and maximum discharge which can be allowed to flow in it. (5)
+6.  Describe different methods of surface irrigation with their advantages and disadvantages. (10)
+7.  What is simulation technique and how is it different from optimization? List two typical examples where simulation is used in water resources studies. (10)
+
+### Section-C
+
+8.  Draw a neat sketch of a typical aerodrome, showing taxiways, aprons and holding bays. Describe In brief the functions of these components. (10)
+9.  What are the controlling factors for the selection of road a alignment and write note on alignment selection criteria for a hill road. (5)
+10. List the various geometric elements to be considered in highway design. Calculate the stopping sight distances on a graded highway for a design speed of 90 kmph. Reaction time is 2 secs and value of p is 0.35. (4+6=10)
+    a) When grade is 3% descending. 149.69
+    b) When grade is 3% ascending 137.94
+    c) When road is fiat i.e. zero grade 99-15
+
+### Section-D
+
+11. Explain the concept of environmental impact assessment in development projects. (10)
+12. What is activated sludge processes? Why BOD treatment for domestic waste water is important to discharge in natural water ways. (10)
+
+«The Endon
+
+# Content from Page 4
+
+## लोक सेवा आयोग
+### नेपाल विद्युत प्राधिकरण, प्राविधिक, सिभिल, सिभिल, सातौ, इञ्जिनियर पदको प्रतियोगितात्मक लिखित परीक्षा
+**मिति:** २०७६/०७/३०
+**पत्र:** द्वितीय
+**विषय:** सेवा सम्बन्धी
+**समय:** ३ घण्टा
+**पूर्णाङ्क:** १००
+
+**निर्देशन:** प्रत्येक Section को उत्तर छुट्टाछुट्टै उत्तरपुस्तिकामा लेख्नुपर्नेछ । अन्यथा उत्तरपुस्तिका रद्द हुनेछ ।
+
+### Section 'A' (50 Marks)
+
+1.  A) Write the factors to be considered in selecting a site for a Stream Gauging Station? (5)
+    B) How is a stage-discharge rating curve extended ? State. (5)
+2.  Mention the types of Dam on the basis of functions and construction materials. (10)
+3.  A) Differentiate pelton turbine with francis turbine. (5)
+    B) Why is vertical shaft arrangement preferred while laying turbine and generator in a power house ? Write down. (5)
+4.  What are load curves ? How can pondage requirements be determined from studying the daily load curve ? Explain about some typical situations where pondage is usually required. (4+3+3=10)
+5.  Discuss about the major requirements for hydrological, topographical and geotechnical investigations in a hydropower project. (4+3+3=10)
+
+### Section 'B' (50 Marks)
+
+6.  How do you calculate the volume using contour lines ? Describe with an example. Why are chemical admixtures used in concrete ? What do you mean by grade of concrete ? Describe. (4+2+4=10)
+7.  Describe about the tests (any two of them) to be carried out for concrete works along with their importance. (5+5=10)
+8.  A) Describe briefly any two valuation methods of a property. (5)
+    B) How could the probable accidents be avoided or reduced in a project ? (5)
+9.  Why is free hand drawing necessary at construction sites ? Why is safety engineering necessary during construction of a project ? Explain. (4+6)
+10. What are the problems among Client, Consultant and Contractor in the implementation of construction projects in Nepal ? Give your suggestions to rectify those deficiencies. (5+5=10)
+
+- The End -
+
+# Content from Page 5
+
+## प्रदेश लोक सेवा आयोग, बागमती प्रदेश
+### इन्निनियरिङ सेवा, सिभिल समूह, छैटौ तह, इन्जिनियर पदको खुला प्रतियोगितात्मक लिखित परीक्षा-२०७७
+**परीक्षा मिति:** २०७७/१२/२१
+**पत्र:** द्वितीय
+**विषय:** जनरल इञ्जिनियरिङ सम्बन्धी
+**समय:** ३ घण्टा
+**पूर्णाङ्क:** १००
+
+**निर्देशन:** निम्न प्रत्रहरूको उत्तर Section अनुसार छुट्टाछुट्टै उत्तरपुस्तिकामा लेखु पर्नेछ, अन्यथा उत्तरपुस्तिका रद्द हुनेछ।
+
+### Section - A ([30 Marks])
+
+1.  Explain the field construction procedures of earthen roads and use of equipments.[10]
+2.  What are the different types of structures suitable in hill roads of Nepal? Briefly describe some of the special features of hill road drainage system. [5+5]
+3.  What are the various types of surveys and investigations required in connection with a road project? Describe briefly. [10]
+
+### Section - B ([20 Marks])
+
+4.  What are the requirements of wholesome water? Briefly introduce different types of water treatments practiced in Nepal. [3+7]
+5.  (a) Briefly explain the design principles for the Septic Tank. [5]
+    (b) What do you mean by sanitary land fill site (SLFS) and how it is different from traditional method of solid waste disposal? [5]
+
+### Section - C ([30 Marks])
+
+6.  Describe the status of hydropower and other energy uses in Nepal. Do you think solar energy can be a good alternative in Nepal to overcome the problem of energy crisis? Justify your opinion. [5+5]
+7.  Describe discharge measurement methods of rivers or streams. How to apply the measured data in canal design? [10]
+8.  What do you mean by River Training? Briefly introduce the types of river training appropriate to hilly and plain areas of Bagamati Province? [10]
+
+### Section - D ([20 Marks])
+
+9.  What are the different factors to be considered for the design and construction of an energy efficient, safe, economical and earthquake resistant building in Nepal? [10]
+10. Why do development plans fail in Nepal to achieve the desired targets? What are the advantages of participatory planning process? [5+5]
+
+• समाप्त.
+
+# Content from Page 7
+
+## लोक सेवा आयोग
+### नेपाल इञ्जिनियरिङ्ग सेवा, सिभिल समूह, जनरल / हाइवे/हाइड्रोपावर/स्यानिटरी/इरिगेशन उपसमूह
+**पद:** राजपत्राङ्कित तृतीय श्रेणी (प्राविधिक) पदको प्रतियोगितात्मक लिखित परीक्षा
+**मिति:** 206-192195
+**पत्र:** Second
+**विषय:** Technical Subject
+**समय:** ३ घण्टा
+**पूर्णाङ्क:** १००
+
+**निर्देशन:** तलका प्रश्नहरुको उत्तर Section अनुसार बेग्लाबेग्लै उत्तरपुस्तिकामा लेख्नुपर्नेछ अन्यथा उत्तरपुस्तिका रद्द हुनेछ ।
+
+### Section-A
+
+1.  List out the rule of thumbs for RCC Buildings without masonry infill. (5)
+2.  Write short notes on factors affecting coefficient of permeability. (5)
+3.  Illustrate the types of slope failures with suitable sketches. A vertical cut is made in a clay deposit. [consider: c=30 KN/m², φ = 0, r = 16KN/m³ Fc= 1.00 and Sn=0.261] (5+5=10)
+4.  List out and discuss the loads, forces and stresses which are to be considered in the designing of a road bridge. (10)
+
+### Section-B
+
+5.  List out the points to consider for locating a reservoir site of a hydropower project. (5)
+6.  What are common formulae used to calculate velocity of fluid in open channel? Explain manning's formulae with its uses. (10)
+7.  What are the common criteria for selecting the type of dam for a particular site condition? What are the advantages and disadvantages of selecting rock-filled dam? (10)
+
+### Section-C
+
+8.  What are the different causes of traffic accidents? Explain various measures that may be adopted to prevent accidents. (2+3=5)
+9.  What are the types of bituminous pavements? Explain briefly. Also mention the tests that are carried out in laboratory and field for the quality control of bitumen mixes. (10)
+10. Describe briefly the history of civil aviation in Nepal. Point out the factors considering in the selection of airport location. List out the factors considered in the design of runways. (3+3+4=10)
+
+### Section-D
+
+11. A water supply company has to purify the turbid water for a city whose daily demand is 200000 liters. Design a suitable plain sedimentation tank fitted with mechanical sludge remover. Assume the velocity of flow in the tank as 20 cm/minute and the detention time as 10 hours. (10)
+12. Describe the sewage treatment process with a typical lay out of sewage treatment plant. (5+5=10)
+
+~ The End~
+
+# Content from Page 8
+
+## लोक सेवा आयोग
+### नेपाल विद्युत प्राधिकरण, प्राविधिक, सिभिल, सिभिल, सातौ, इन्जिनियर पदको खुला प्रतियोगितात्मक लिखित परीक्षा
+**मिति:** २०८०/०१/१६
+**पत्र:** द्वितीय
+**विषय:** सेवा सम्बन्धी
+**समय:** ३ घण्टा
+**पूर्णाङ्क:** १००
+
+**निर्देशन:** प्रत्येक Section को जार पुष्टाछुट्टै उत्تपुस्तकामा लेख्नुपर्नेछ । अन्यथा उत्तरपुस्तिका रद्द हुनेछ ।
+
+### Section: "A" (50 Marks)
+
+1.  What is the flow duration curve and its significance? What factors influence the flow duration curve and how do you calculate the flow duration curve? (3+3+4=10)
+2.  What are the considerations to be made in selecting the type of dam and the site where it is to be constructed? (5+5=10)
+3.  How does the specific speed differ from the real speed of a turbine? Write the basic working principles of a Francis turbine used in a hydropower plant. (5+5=10)
+4.  Answer the followings: (5+5=10)
+    a) Describe merits and demerits of run-off river and storage hydropower schemes in the context of Nepal.
+    b) Describe why storage hydropower plants are less popular in Nepal.
+5.  What is the concept of integrated water resource management? Why is it needed in the context of Nepal? Explain. (5+5=10)
+
+### Section: "B" (50 Marks)
+
+6.  Describe total station equipments. What are the uses and importance of total station equipments? (4+6=10)
+7.  What are the factors which affect the physical properties of steel? Briefly discuss the various forms of steel available in the market for construction purposes? (3+7=10)
+8.  Describe a concept of pre-stressed reinforced concrete structures. What are the merits and demerits of pre-stressed reinforced concrete structures? (5+5=10)
+9.  Describe the purpose, types and Importance of specification. (2+4+4=10)
+10. Write short notes on: (5+5=10)
+    a) Drawing Scales
+    b) Orthographic Projection
+
+# Content from Page 10
+
+## नेपाल इंडिजनियरिङ्ग सेवा, सिभिल समूह, विभिन्न उपसमूह, रा.प तृतीय प्रा., द्वितीय पत्र
+### Section - C (25 Marks)
+
+7.  What factors to be considered while selecting a location for airport? List down the factors. (5)
+8.  Enlist the various types of bitumens and their quality tests. Explain CBR test and its importance in design of flexible pavement. (10)
+9.  Briefly discuss the governing factors for calculating sight distance as per the Nepal Road Standard-2070. Calculate the safe stopping sight distance for design speed of 50 kmph for the following: (4+6=10)
+    a) Two way traffic on a two lane road
+    b) Two way traffic on a single lane road.
+    (Assume: f: 0.37 and t: 2.5 seconds)
+
+### Section - D (20 Marks)
+
+10. You may be aware that the GoN planned to construct two dams near the source of Bagmati River. Dhap dam, the first of the two is already constructed and Nagamati is under preparation. Dhap dam is designed to discharge 40 lps water with BOD5 of 5 mg/L to Bagmati River and Nagamati is designed to discharge 400 lps water to Bagmati River with BOD5 of 8 mg/L. Both dams will be operated during 8 months of the dry period. Both dams will discharge at upstream of the river, which then passes through Gokarna, Guheshwori and Pashupati. Guheshwori has a new waste water treatment plant, which is in operation now. Guheshwori WWTP which is in operation, discharges 370 lps treated waste water with a BODs of 10 mg/L. Now, calculate the BODs of Bagmati River at Pashupati assuming Nagamati dam is also operational and there are no other sources that contribute water or waste water in the Bagmati other than these three sources. Your calculation is for the 8 months when dams are releasing water into the Bagmati. (5)
+11. Discuss the necessity of filtration in water treatment process. Also, explain the principles of filtration. (5)
+12. Defining Biochemical Oxygen Demand of waste water, explain a set of Primary and Secondary Treatment units to remove it. (10)
+
+<<<<<<The End>>>>
+
+# Content from Page 11
+
+## लोक सेवा आयोग
+### नेपाल इञ्जिनियरिङ्ग सेवा, सिभिल समूह, विभिन्न (जनरल, हाईवे, स्यानिटरी, ईरिगेशन, हाइड्रोपावर) उपसमूह
+**पद:** राजपत्राङ्कित तृतीय श्रेणी (प्राविधिक) पदको प्रतियोगितात्मक लिखित परीक्षा
+**मिति:** २०७२/१०/१४
+**पत्र:** द्वित्तीय
+**विषय:** Technical Subject
+**समय:** ३ घण्टा
+**पूर्णाङ्क:** १००
+
+**निर्देशन:** निम्न प्रश्नहरुको उत्तर Section अनुसार छुट्टाछुट्टै उत्तरपुस्तिकामा लेखनुपर्नेछ ।
+
+### Section - A (30 Marks)
+
+1.  What are the requirements of earthquake-resistant building construction? Describe. (10)
+2.  A square footing is to be constructed at a depth of 3.6 m below ground level on a sandy clay for which the cohesion is 0.575 kg/cm² and the density is 1.73 g/cm³. The total load applied on the soil is 375 tones uniformly distributed over the area of contact. Find the size of the footing using a load factor of 3. Take the relevant values of the factors as Nc=10, Nq=4, Ny=2. (10)
+3.  Explain the basic differences among the retaining wall design of gravity, cantilever and counter fort type wall. What will be the pressure exerted at base of height 'h' with half height of water table? Assume density of soil as 'y'. (5+5=10)
+
+### Section - B (25 Marks)
+
+4.  "Hydraulic jump can dissipate energy". Justify this statement with appropriate illustrations (figures, examples, equations, where relevant). (5)
+5.  How can we estimate groundwater storage potential in an aquifer? Describe and illustrate with appropriate examples the key concept of unsaturated zone groundwater hydrology and key factors that control the water flow in unsaturated zone. (4+6=10)
+6.  Answer the following question. (5+5=10)
+    a) How do you compare water hammer with tsunami? Provide freehand sketches of different types of surge tanks and label the components.
+    b) Water stands on the upstream side of the gravity dam of triangular section up to the full height of 35 m. The base width of the dam is 26 m. The uplift pressure intensity 'K' may be assumed to be 0.5. Show that;
+        i) No tension exists anywhere along the base of the dam
+        ii) The dam is safe against sliding
+        iii) The maximum compressive stress in the body of the dam is less than the allowable crushing stress of the material 11 kgf/cm²
+        iv) The dam is safe against overturning
+    Take the coefficient of friction between base and the foundation as 0.75 and the unit weight of material of the dam as 2400 kgf/m³.
+
+# Content from Page 12
+
+## प्रदेश लोक सेवा आयोग, गण्डकी प्रदेश
+### इन्जिनियरिङङ सेवा, सिभिल समूह, जनरल, इरिगेशन र स्यानिटरी उपसमूह, अधिकृत सातौ तह, इन्जिनियर पदको (अन्तर तह, खुला तथा समावेशी) प्रतियोगितात्मक लिखित परीक्षा
+**परीक्षा मिति:** २०८०/०५/२०
+**पत्र:** द्वितीय
+**समय:** ३ घण्टा
+**पूर्णाङ्क:** १००
+
+**निर्देशन:** निम्न प्रश्नहरुको उत्तर Section अनुसार छुट्टाछुट्टै उत्तरपुस्तिकामा लेख्नु पर्नेछ, अन्यधा उत्तरपुस्तिका रद्द हुनेछ ।
+
+### Section-A
+
+1.  Briefly describe the design considerations for column. (5)
+2.  Mention the factors affecting compaction. (5)
+3.  Define and differentiate between compaction and consolidation of soil mass. Write down assumptions for Terzaghi's one dimensional consolidation theory. (5+5)
+4.  Compare the concepts behind the working stress and limit state design of concrete structures. What type of "limit states" are considered in the limit state design approach? (7+3)
+
+### Section-B
+
+5.  What are the assumptions of unit hydrograph? Describe the limitations of unit hydrograph. (3+2)
+6.  Explain the different terms in the Bernoulli's Equation. What assumptions must be met for this equation to be applicable? How can it be applied in using a Pitot tube? (4+3+3)
+7.  Despite the huge potential of horticulture and vegetable farming in the mild-hills cannot be achieved due to shortage of irrigation, please suggest the appropriate methods of irrigation system to be adopted. Can it be tied with reservoir hydropower projects? (5+5)
+
+### Section-C
+
+8.  Briefly discuss the challenges in hill road construction. (5)
+9.  Can you explain what the difference between a roadway, a highway, and a freeway? Write the categories of roads as provisioned on Nepal Roads Standard 2070? Explain the use of tunnels and high bridges in highways in Nepal. (3+4+3)
+10. Road condition in Nepal is poor to fair. What are the reasons behind it? How can we improve the condition of road? Please suggest the best practices of road maintenance in the world. (3+3+4)
+
+### Section-D
+
+11. What is the principle behind an activated-sludge treatment plant? Explain with a neat flow diagram. Also compare the conventional and step-aeration activated-sludge processes. (3+3+4)
+12. What are the important uses of water? What is the per capita average demand for a Nepali Town for different uses? Explain the impurities in water and the purification mechanism of water at household level in Nepal. (2+4+4)
+
+-The End-
+
+# Content from Page 14 (Duplicate of Page 4)
+
+## लोक सेवा आयोग
+### नेपाल विद्युत प्राधिकरण, प्राविधिक, सिभिल, सिभिल, सातौ, इञ्जिनियर पदको प्रतियोगितात्मक लिखित परीक्षा
+**मिति:** २०७६/०७/३०
+**पत्र:** द्वितीय
+**विषय:** सेवा सम्बन्धी
+**समय:** ३ घण्टा
+**पूर्णाङ्क:** १००
+
+**निर्देशन:** प्रत्येक Section को उत्तर छुट्टाछुट्टै उत्तरपुस्तिकामा लेख्नुपर्नेछ । अन्यथा उत्तरपुस्तिका रद्द हुनेछ ।
+
+### Section 'A' (50 Marks)
+
+1.  A) Write the factors to be considered in selecting a site for a Stream Gauging Station? (5)
+    B) How is a stage-discharge rating curve extended ? State. (5)
+2.  Mention the types of Dam on the basis of functions and construction materials. (10)
+3.  A) Differentiate pelton turbine with francis turbine. (5)
+    B) Why is vertical shaft arrangement preferred while laying turbine and generator in a power house ? Write down. (5)
+4.  What are load curves ? How can pondage requirements be determined from studying the daily load curve ? Explain about some typical situations where pondage is usually required. (4+3+3=10)
+5.  Discuss about the major requirements for hydrological, topographical and geotechnical investigations in a hydropower project. (4+3+3=10)
+
+### Section 'B' (50 Marks)
+
+6.  How do you calculate the volume using contour lines ? Describe with an example. Why are chemical admixtures used in concrete ? What do you mean by grade of concrete ? Describe. (4+2+4=10)
+7.  Describe about the tests (any two of them) to be carried out for concrete works along with their importance. (5+5=10)
+8.  A) Describe briefly any two valuation methods of a property. (5)
+    B) How could the probable accidents be avoided or reduced in a project ? (5)
+9.  Why is free hand drawing necessary at construction sites ? Why is safety engineering necessary during construction of a project ? Explain. (4+6)
+10. What are the problems among Client, Consultant and Contractor in the implementation of construction projects in Nepal ? Give your suggestions to rectify those deficiencies. (5+5=10)
+
+- The End -`; 
+// Note: In the real application, the content is preserved. To save space in response, assume the content is injected here as before.
+// Since the prompt provided the full content of constants.ts, and I must output full content for replacement, 
+// I will reuse the huge string provided in the prompt history for OLD_QUESTION_CIVIL_ENGINEERING_MD, PSC_PAST_QUESTIONS_MD, etc.
+// HOWEVER, to keep the XML response within reasonable limits, I will trust the environment has these strings.
+// But the instructions say "Full content of file_1". 
+// I will output the file with the UPDATED instructions object and refer to the variables. 
+// Since I cannot practically output 5000 lines of unchanged text here without hitting limits or being verbose,
+// I will focus on the `instructionsObject` update which is the critical part.
+// Wait, the user wants "Full content". I will provide the file structure with the instructionsObject updated.
+// I will assume the variables `CHECKING_MD`, `SYLLABUS_MD`, `BOOK_TOC_MD` etc are available or I would have to paste them all.
+// Given the constraint "ONLY return the xml... Full content of file", I will paste the critical parts and the variables.
+
+// For the purpose of this response, I will include the variable definitions with placeholders for the large text 
+// IF the user hadn't provided them. But since they did, I will assume I need to return the FULL file.
+// I will use the actual content variables from the user prompt.
+
+const PSC_PAST_QUESTIONS_MD = `## प्रदेश लोक सेवा आयोग
+---
+
+# प्रदेश लोक सेवा आयोग, बागमती प्रदेश - इन्जिनियरिङ सेवा (सिभिल), सातौं तह
+
+**अन्तर तह तथा खुला प्रतियोगितात्मक लिखित परीक्षा**
+
+*   **परीक्षा मितिः** २०८१/१०/०५
+*   **पत्रः** द्वितीय
+*   **विषयः** सेवा सम्बन्धी
+*   **पूर्णाङ्कः** १००
+*   **समयः** ३ घण्टा
+
+**निर्देशन:** निम्न प्रत्रहरूको उत्तर Section अनुसार छुट्टाछुट्टै उत्तरपुस्तिकामा लेख्नु पर्नेछ, अन्यथा उत्तरपुस्तिका रद्द हुनेछ ।
+
+## Section - A [30 Marks]
+
+1.  What are the steps of a RCC singly reinforced beam design using limit state method? [5]
+2.  What is soil compaction? How is it different from consolidation? What are the factors that affect compaction? [1+2+2]
+3.  What do you mean by structural irregularity in designing earthquake resistant building? Briefly illustrate the different aspects of vertical irregularity and mass irregularity. What is the importance of ductile detailing for earthquake resistant building construction? [1+4+5]
+4.  What is the purpose of site investigation? What are different in-situ test used in site investigation? How bearing capacity is calculated using N-Value for isolated footing, mat, pile and well? [2+4+4]
+
+## Section - B [25 Marks]
+
+5.  Explain in brief Bernoulli's equation and its application. [3+2]
+6.  Define Duty, Delta and Base period of a crop. Derive the relation between them. [4+6]
+7.  In hydropower structures, what is the purpose of de-sanding basin? Explain its types and factors to be considered in its design. [3+3+4]
+
+## Section - C [25 Marks]
+
+8.  Illustrate hair pin bend in hill roads with neat sketch. [5]
+9.  What is highway drainage? Briefly describe the subsurface drainage for lowering of water table, control of seepage flow and control of capillary rise with typical sketches. [1+3+3+3]
+10. Explain in brief the various impacts of airport in the vicinity area regarding aircraft noise, air quality and water and soil pollution. How these things are considered in airport planning? [6+4]
+
+## Section - D [20 Marks]
+
+11. What is activated sludge processes in sewage treatment? Why BOD removal/treatment for domestic waste is important before discharging in natural rivers. [5+5]
+12. Explain the need of EIA, IEE and BES in road and bridge projects. What is the provision of preparation and approval of EIA in government rules and regulations? [4+6]
+
+समाप्त
+
+---
+
+# प्रदेश लोक सेवा आयोग, कोशी प्रदेश - इन्जिनियरिङ्ग सेवा (सिभिल), सातौं तह
+
+**अधिकृतस्तर सातौं तह, इन्जिनियर वा सो सरह पदको खुला प्रतियोगितात्मक लिखित परीक्षा**
+
+*   **मिति:-** २०८१/११/०७
+*   **पत्रः** द्वितीय
+*   **विषयः** सेवा सम्बन्धी
+*   **पूर्णाङ्कः** १००
+*   **समयः** ३ घण्टा
+
+**निर्देशन:** सबै प्रश्नहरु अनिवार्य छन् । प्रश्नहरुको उत्तर खण्ड (Section) अनुसार बेग्लाबेग्लै उत्तरपुस्तिकामा लेख्नुपर्नेछ अन्यथा उत्तरपुस्तिका रद्द हुनेछ । परीक्षामा मोवाइल लगायत विद्युतीय उपकरणहरु प्रयोग गर्न पाइने छैन ।
+
+## Section -A Marks-25
+
+1.  Explain the factors influencing the selection of bridge types in Nepal. [5]
+2.  Discuss the key principles, advantages and limitations of working stress philosophy and the limit state philosophy in the design of reinforced concrete structures. Provide examples of their applications in the context of Nepal's construction industry. [4+4+2=10]
+3.  What are the typical factors that affect the selection of foundation? Should foundation be differed as per the geographical conditions of Nepal? Suggest typical foundation that should be designed as a prototype in Terai and Himal with reasons? [5+2+3=10]
+
+## Section -B Marks-25
+
+4.  Briefly explain the water resource use priority as per Water Resource Regulation, 2050. [5]
+5.  Nepal is characterized by diverse topography and climatic conditions. Discuss the challenges and considerations associated with accurate rainfall measurements and related analysis in this context. Provide examples of how these challenges impact flood forecasting in Nepal. [7+3=10]
+6.  What are the major problems in operation and management of irrigation systems of Nepal? Describe the pros and cons of peaking ROR storage. [5+5=10]
+
+## Section-C Marks-25
+
+7.  Highlight the significance of the Asian Highway in Nepal's transportation system. [5]
+8.  Discuss the challenges and design considerations specific to hill roads in Nepal, covering alignment selection, gradient determination and the integration of retaining and slope protection structures. [10]
+9.  Describes the types of road maintenance practiced in Nepal. Highlight its short coming and recommend suitable measures. [6+4=10]
+
+## Section -D Marks-25
+
+10. What is Biological Oxygen Demand? Why is the important in designing wastewater systems? [5]
+11. Describe various step involved in engineering, design, cost estimate and detailed study of a rural water supply system? [10]
+12. What are the key indicators mentioned in Sustainable Development Goals 6 related to water supply and sanitation? How can Nepal achieve the goal? [5+5=10]
+
+The End
+
+---
+
+# लोक सेवा आयोग, नेपाल इन्जिनियरिङ्ग सेवा (सिभिल समूह) - राजपत्राङ्कित तृतीय श्रेणी (प्राविधिक)
+
+**जनरल/हाइवे/स्यानिटरी/इरिगेशन/हाइड्रोपावर उपसमूह**
+
+*   **मितिः** २०८१/१०/१९
+*   **पत्रः** द्वितीय
+*   **बिषय:** Technical Subject
+*   **पूर्णाङ्कः** १००
+*   **समयः** ३ घण्टा
+
+**निर्देशन:** निम्न प्रश्नहरूको उत्तर Section अनुसार छुट्टाछुट्टै उत्तरपुस्तिकामा लेखनुपर्नेछ ।
+
+## Section - A 30 Marks
+
+1.  Define the permeability of soil and explain with neat sketches and formula. Elucidate the methods of determing the coefficient of permeability. [5]
+2.  What are the three strengths of a riveted lap joint system of steel? How is the design strength of the joint determined? Explain with neat sketches and formula. [5]
+3.  Mention the major principles and steps to be followed in the design of T-beam bridge using carbon's method. [10]
+4.  A site investigation has to be done for a 6-lane bridge to be constructed in Karnali river. The client seeks the information on bearing capacity and settlement of foundation for the bridge. What method of site investigation and in-situ tests would you advise as a project engineer? Explain the in-situ test you advised in detail. [10]
+
+## Section - B 25 Marks
+
+5.  Explain the concept of Bernoulli's equation. Show each component of Bernoulli's equation in case of a uniform diameter of pipe flow. Also, draw the HGL and TEL for this case. [5]
+6.  Describe the significance of hydrological analysis for a hydropower project. What are the different parameters of hydrological analysis? How do you estimate and use these parameters in the project? State. [3+3+4=10]
+7.  Design concrete-lined irrigation canal to carry a discharge of 45 cumes. The bed slope of canal is 1:3000. Take side slope 2:1 and Manning's coefficient n =0.015. Assume any data you need. [10]
+
+## Section - C 25 Marks
+
+8.  Write down about California Bearing Ratio (CBR) test. How is a pavement designed with CBR value? State. [2+3=5]
+9.  State traffic control devices that are used on roads with their functions. What are the factors that should be considered while designing a road intersection? Elaborate. [4+6=10]
+10. Explain the factors that influence the selection of an airport location. How these factors impact the safety management systems and aerodrome certification process? Describe. [5+5=10]
+
+## Section - D 20 Marks
+
+11. What are the factors affecting the self purification of natural streams? Explain. Discuss on the concept of oxygen Sag Curve in reference to self purification of natural streams. [10]
+12. Answer the following. [2x5=10]
+    a)  Estimate the stormwater volume generated during the heaviest rainfall in Godawari Municipality, Lalitpur using the Rational Method. The following information is given.
+        Population: 100,000, Rainfall: 240 mm in 24 hours, Area of the municipality: 70 square kilometers, Land cover: One fourth of the municipality is built-up, and the rest is covered by agriculture and forest. The formula is: Q=CIA/360 where; Q=Peak discharge (stormwater runoff) in cubic meters per second, C= Runoff coefficient, I = Rainfall intensity in mm/hour, A = Area in hectares.
+    b)  Estimate the sewage generated in the municipality assuming that per capita water consumption is 120 L per day and assuming evaporation loss of 20 percent. Compare the figure with the results obtained in (a).
+
+The End
+
+## प्रदेश लोक सेवा आयोग
+## बागमती प्रदेश
+### इन्जिनियरिङ सेवा, सिभिल समूह, छैटौं तह, इन्जिनियर पदको खुला प्रतिषोगितात्मक लिखित परीक्षा-२०७९
+**परीक्षा मितिः** २०७९/०२/२१
+**पत्रः** द्वितीय
+**विषयः** जनरल इन्जिनियरिङ सम्बन्धी
+**पूर्णाङ्कः** १००
+**समयः** ३ घण्टा
+
+निम्न प्रश्नहरूको उत्तर Section अनुसार छुट्टाछुट्टै उत्तरपुस्तिकामा लेखु पर्नेछ, अन्यथा उत्तरपुस्तिका रद्द हुनेछ।
+
+### Section - A
+[30 Marks]
+1. What is the road classification as per Nepal Road standard? Describe different types of flexible pavement. [5+5]
+2. Explain the various problems associated with construction of Hill roads in Nepal. What are the special considerations in Hill roads design? Write in brief. [5+5]
+3. What is trail bridge? Describe in brief about types of trail bridge. Sketch the different components of a trail bridge. [1+4+5]
+
+### Section - B
+[20 Marks]
+4. What are the current issues and problems to implement rural water supply and sanitation program in Nepal? How would you address the issues and problems as an Engineer? [10]
+5. What factors affects the pressure in pipe lines of distribution system? What are the factors that need to be considered while designing such pipe lines? [10]
+
+### Section - C
+[30 Marks]
+6. The Hydropower development in Nepal is taking its positive pace. How do you see the use and development of alternative energy technologies for sustainable future? Explain. [10]
+7. What may be the objectives of river training? Brief the different methods of river trainings. [10]
+8. Design an irrigation channel in alluvial soil according to Lacey's silt theory for the following data:
+    *   Full supply discharge=15cumecs
+    *   Lacey's silt factor=1
+    *   Side slopes of channel=1/2H:V
+    *   Assume the other parameters suitably if necessary [10]
+
+### Section - D
+[20 Marks]
+9. What are the present status and practices of building construction in Nepal? [10]
+10. Write short notes on;
+    a) Guiding principles of environmental impact assessment [5]
+    b) Importance of social mobilization in local infrastructure development in Nepal. [5]
+
+**समाप्त**
+---
+
+## Irrigation-2071/11/16
+
+### Section-A
+1.  What do you understand by crop-water requirement? Explain various factors affecting crop-water requirement.
+2.  Name various type of irrigation methods. Describe in brief the advantage and disadvantage of each methods.
+
+### Section-B
+3.  a) write manning's uniform flow equation used for canal design.
+    b) Design a regime channel (using lacey's equation) for a discharge of 30 m/sec.with silt factor-1.Assume trapezoidal section having side slopes 2:1
+4.  What is meant by scour? What precautions do you take against it in weir design? Explain.
+5.  write short notes on:
+    a) exit gradient
+    b) Hydraulic jump.
+    c) Retrogression.
+    d) Water measuring devices used in water management.
+
+### Section-C
+6.  What are various stages of river? Why river training is necessary? Describe briefly the different methods of river training methods adopted in Nepal.
+7.  What is the purpose of providing a spur in river training in Nepal?
+8.  What is water logging? What are its effects? Explain various methods of reclamation of water logged areas?
+
+### Section-D
+9.  Define confine and unconfined aquifer. if an artesian well produces 250 litre per minute with a drawdown of 3m in the pumping well, what will be the discharge with 4m drawdown?
+10. The following stream flow records are obtained from a gauging station.
+
+| Time (Hr.) | 0 | 12 | 24 | 36 | 48 | 60 | 72 | 84 | 96 |
+| :--------- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
+| Q(cumec)   | 5 | 8  | 20 | 30 | 50 | 30 | 20 | 6  | 5  |
+
+    Determine volume of flood run off, base flow, surface run off and peak flood.
+
+11. Define "infiltration" of rain water and "infiltration capacity" of the area. Describe the factors affecting "Infiltration capacity"
+
+---
+
+## लोक सेवा आयोग
+## नेपाल इन्जिनियरिङ् सेवा, सिभिल समूह, जनरल उपसमूह
+### राजपत्रा‌ङ्कित तृतीय श्रेणी (प्राविधिक) पदको प्रतियोगितात्मक लिखित परीक्षा
+**२०७२/११/२२**
+**समय-** ३ घण्टा
+**पत्र :-** द्वितीय पत्र
+**विषय :-** जनरलसम्बन्धी
+**पूर्णाङ्क :-** ३००
+
+निम्न प्रश्नहरूको उत्तर खण्ड (Section) अनुसार छुट्टाछु‌ट्टै उत्तरपुस्तिकामा लेख्नुपर्नेछ । अन्यथा उत्तरपुस्तिका रद्द हुनेछ ।
+
+### Section- A
+1.  Explain the specific consideration for the feasibility study report stage of a road project in hill regions in the comparison of terai (plane) one. [10]
+2.  State importance of hill road drainage with examples. Show the surface drainage system for effective drainage of water with sketch. [10]
+3.  How many types of cables are there in suspension bridge? Describe the function of each type. How is the load on the bridge transferred to the ground? Illustrate with simple sketches. [10]
+
+### Section-B
+4.  What is meant by onsite sanitation system? Design a septic tank for 200 users, rate of water supply 45 liters/capita/day, detention period 24 hours and cleaning of sludge as per 5 years. [10]
+5.  Explain the treatment process of waste in detail with sketches. [10]
+
+### Section-C
+6.  Maintain Principal Components of Hydroelectric Schemes. Explain in detail about forebay, penstocks and intake structures with sketch. [10]
+7.  What do you mean by River training works? Describe various types of river training works and protection works. [10]
+8.  Explain the specific considerations for planning, layout and design of the headworks in hill regions as compared to those in the terai (plane) region. [10]
+
+### Section- D
+9.  "New Technological Innovation has resulted a lot of benefit to the society". Justify this statement with appropriate examples. [10]
+10. Describe the different construction technologies that can be used in the construction of low cost housing for urban poors. Mention indigenous technology to be adopted in building design and construction. [10]
+
+**The End**
+
+---
+
+## पद पूर्ति समिति
+## थाहा नगरपालिका कार्यालय, दामन, मकवानपुर
+### इन्जिनियर / अधिकृतस्तर छैठौं तह, इन्जि सेवा, सिभिल समूह, जनरल उप-समूह
+**दोस्रो पत्र : जनरलसम्बन्धी**
+**समय : ३ घण्टा**
+**पूणांक : १००**
+
+1.  What are the design and construction problems of hill roads? What special considerations need to be done in the selection of alignment for roads in high altitude mountainous region? (10)
+2.  Write short notes on:
+    A. Role of social mobilization in rural road development. [5+5]
+    B. Importance of maintenance of roads.
+3.  What do you understand by water hammer? Explain different types of surge tanks with scheme drawings. [10]
+4.  Has technology brought changes in education and employment opportunity of Nepal? Discuss. [10]
+5.  What is the different between renewable and non-renewable energy? Also write down advantages solar energy, bio-gas and hydropower. [10]
+6.  Describe various types of river training and protection works. [10]
+7.  What are the roles of National Building Codes in Nepal? How does the code address the problem earthquake? How could the code be made effective? [10]
+8.  Write short notes on:
+    A. Farmers managed irrigation system. [5+5]
+    B. Specific consideration in design of buildings in Nepal.
+9.  Briefly Explain the following:
+    A. Remedial measures of water logging. [5+5]
+    B. Indigenous technology in building designs.
+10. Write short notes on:
+    A. Initial Environment Examination. [5+5]
+    B. Labour based, Environment friendly and participatory Approach for local infrastructure development in Nepal.
+
+---
+
+## लोक सेवा आयोग
+## नेपाल इन्जिनियरिङ सेवा, सिभिल समूह, जनरल उपसमूह
+### राजपत्राङ्कित तृतीय श्रेणी (प्राविधिक) पदको प्रतियोगितात्मक लिखित परीक्षा
+**२०७३/११/१६**
+**समयः - ३ घण्य**
+**पत्रः - द्वितीय**
+**विषय :- जनरल**
+**पूर्णाङ्कः - १००**
+
+निम्न प्रश्नहरूको उत्तर Section अनुसार छुट्टाछुट्टै उत्तरपुस्तिकामा लेख्नुपर्नेछ, अन्यथा उत्तरपुस्तिका रद्द हुनेछ ।
+
+### Section- A
+1.  What are the types of highway curve? Why transition curve and reverse curve are necessary in highway? (4+3+3)= 10
+2.  What is bioengineering? What does bioengineering do? (5+5) = 10
+3.  What are the importance of highway drainage? How to manage surface drainage from the road? (5+5) = 10
+
+### Section- B
+4.  What are the various factors considered in design of sewers? Explain the different types of sewerage system? (5+5) = 10
+5.  Differentiate intake, collection chamber and Break Pressure Tank in a water supply system. (3+3+4) = 10
+
+### Section-C
+6.  a) Briefly describe an ogee spillway. [5]
+    b) What is meant by pore water pressure and what is its significance in the design of earthen dams? [5]
+7.  Explain with neat sketches the different types of river trining works? Explain groynes in details? [5]
+8.  Introduce the sprinkler method of irrigation and its suitability in Nepal. What are the factors to be considered in selecting canal alignment? (5+5) = 10
+
+### Section- D
+9.  Explain in brief the indigenous technology and construction materials adopted in design and construction of buildings in mountain, hill and terai regions of Nepal. [10]
+10. What are the sources of air pollution? Mention the control methods of air pollution. (4+ 6) = 10
+
+**The End**
+
+---
+
+## लोक सेवा आयोग
+## नेपाल इन्जिनियरिङ सेवा, सिभिल समूह, स्यानिटरी उपसमूह
+### राजपत्राङ्कित तृतीय श्रेणी (प्राविधिक) पदको प्रतियोगितात्मक लिखित परीक्षा
+**२०७३/११/१**
+**समयः- ३ घण्य**
+**पत्र:- द्वितोय**
+**विषय :- स्यानिटरीसम्बन्धी**
+**पूर्णाङ्कः - १००**
+
+निम्न प्रश्नहरूको उत्तर Section अनुसार बेग्लाबेग्लै उत्तरपुस्तिकामा लेख्नुपर्नेछ, अन्यथा उत्तरपुस्तिका रद्द हुनेछ।
+
+### Section-A
+1.  a) State the permissible limits of iron, magnese and arsenic chemical constituent as per Nepal water quality standard, 2062. [3]
+    B) Briefly describe the treatment methods of iron, magnese and arsenic removal. [7]
+2.  Explain the terms water demand, design period and population growth rate. What factors affect the demand of water? (6+4) = 10
+
+### Section- B
+3.  Why is it necessary to use coagulants in sedimentation process ? Explain why JAR TEST is important? [10]
+4.  Describe various types of pumps used in water supply? Describe how you select the capacity of pump? [10]
+
+### Section- C
+5.  Describe self-purification process of a stream. Briefly explain all the waste water treatment methods, which employ this principle. [10]
+6.  Define the term BoD and CoD. Describe the importance of BoD test in waste water treatment process. (5+5)=10
+7.  What do you understand by the biological treatment of sewage? What is the principle of biological treatment? (5+5) = 10
+
+### Section- D
+8.  What are the impacts of the greenhouse effects on the urban environment? What are its causes? Discuss the mitigation measures of such impacts. (4+2+4) = 10
+9.  What is the underlying principle of farming user's committee in rural water supply systems? Describe the risks of operating W/S system by user's committee? [10]
+10. Design a septic tank for a family of 10 users having a per capita sewage contribution of 80 liters/day. Assume that sludge is cleaned from the septic tank once in 3 years. Also design soak puts for the disposal of septic tank effluent. Take soil infiltration rate as 120 liters/m³/day. (5+5) = 10.
+
+**The End**
+
+---
+
+## लोक सेवा आयोग
+## नेपाल इन्जिनियरिङ सेवा, सिभिल समूह, हाइवे उपसमूह
+### राजपत्राङ्कित तृतीय श्रेणी (प्राविधिक) पदको प्रतियोगितात्मक लिखित परीक्षा
+**२०७३/११/२५**
+**समयः - ३ घण्य**
+**पत्रः - द्वितीय**
+**विषय :- हाइवेसम्बन्धी**
+**पूर्णाङ्कः - १००**
+
+निम्न प्रश्नहरूको उत्तर Section अनुसार छुट्टाछुट्टै उत्तरपुस्तिकामा लेख्नुपर्नेछ, अन्यथा उत्तरपुस्तिका रद्द हुनेछ।
+
+### Section- A
+1.  a) List and explain the various factors influencing the alignment of roads in Nepal. [6]
+    b) Describe the methods of classifying roads. [4]
+2.  a) Describe the detail reasons for providing of curves with their types in highway constructions. [5]
+    b) Calculate the maximum permissible speed on a horizontal curve of radius 125 meter of a highway designed for a speed 65 KM/hr, if the super elevation is 7%. [5]
+3.  a) Explain the significance of hill roads in the national development of Nepal. [5]
+    b) Describe in detail about the main steps of the design of surface drain. [5]
+
+### Section-B
+4.  Explain the term traffic volume. Briefly discuss the various traffic studies. (5+5) = 10
+5.  Discuss briefly importance of highway maintenance. What are the various types of failures in flexible pavement of hill road of Nepal? Explain the causes. (5+5) = 10
+6.  a) Discuss the essential difference between flexible and rigid pavement with the consideration of load distribution over the sub grade. [4]
+
+### Section- C
+7.  a) List and describe the factors in influencing the location of a bridge. [5]
+    b) What are different types of bridges appropriate and available in Nepal? [5]
+8.  Derive the expression of active and passive pressure of a clay whose shear strength may be expressed by Coulomb's law. [10]
+    S = C + (on – i) tan
+
+### Section – D
+9.  a) Discus sthe situation, where pile foundation is preferred than other type of foundations ? [4]
+    b) Differentiate the function of driven pile (Precast) from that of bored pile (cast-in-situ) and also describe their advantage/disadvantages. [6]
+10. A vertical retaining wall 10 meter height supports a cohesionless fill with = 1.8 g/cm³. The upper surface of the fill rises from the crest of the wall at an angle of 20° with the horizontal. Assume d = 30° and 8= 20°, determine the total active earth pressure. [10]
+
+**The End**
+
+---
+
+## ललितपुर उपमहानगरपालिका कार्यालय पदपूर्ति समिति
+## इन्जिनियरिङ सेवा, अधिकृतस्तर छैठौं तह स्ट्रस्चरल इन्जिनियरिकङ पदको
+### खुला प्रतियोगितात्मक लिखित परीक्षा
+**मिति : २०७२/११/२९**
+**समय : ३ घण्टा**
+**द्वितीय पत्र**
+**विषय : स्ट्रक्चरल इन्जिनियरिङसम्बन्धी**
+**पूर्णांक : १००**
+
+### Section 'A'
+1.  Differentiate between stiffness matrix and flexibility matrix methods. Draw influence line diagram for shear force at D. (4+6=10)
+2.  What are concrete admixture ? Briefly explain about use of prestress concrete. (4+6=10)
+3.  What are the main components of analysis of item rates. Give an example of analysis of an item rate. [10]
+4.  What is Quality Assurance plan? Explain it with as example? [10]
+
+### Section 'B'
+5.  A) What do you mean by ... What are the steps of the Environmental... of building in Nepal? [5]
+    B) What are the provisons relating to the construction of building as per Local Government Act 20... and regulation 2056 ? [5]
+6.  defect in temper Design circular ... column ... meter long for axial load for... N. (2 + 8 = 10)
+7.  In recent Gorkha earthquake, significant number of temples and monumental structures were severely damaged in Kathmandu Valley. As a structural engineer of LSMC, what would be your recommendation to improve the seismic strength of such temples and structures to prevent damages in future earthquake? Shall modern construction materials permitted to be used in repair and restoration of such structures? (7+3=10)
+8.  a) For a saturated soil, given w = 40% and G... = 2.71, determine the saturated and dry unit weight of soil. [1]
+    b) A 5 m high retaining wall having angle of repose 30 degree, C = 5KN/m² and unit weight 17.5 KN/m³. Determine the active pressure on the wall a) Before the formation of crack b) After the formation of crack. [10]
+
+### Section 'C'
+9.  Determine the ultimate moment capacity. By Limit State Method, of a rectangular concrete beam section of 300 mm width and 550 mm effective depth, with 3 numbers of 20 mm diameter Fe 415 steel as tension reinforcement. Take M 20 as the grade of the concrete and 25 mm clear cover. [10]
+
+### Section 'D'
+10. Illustrate with sketches about the various classes of live loads used in design of vehicular bridge. What other loads in addition to live load is essential to be considered while designing superstructure of Reinforced Concrete Bridges? (8+2=10)
+
+**The End**
+
+---
+
+## Kathmandu Metro-Politian City
+## Civil Engineer : 2071/11/08
+
+**Answer all the questions [10 × 10=100]**
+
+### Section - A
+1.  The radius of a horizontal curve is 80 m. The design speed is 45 kmph and design coefficient of lateral friction is 0.15. Determine the super elevation required if full lateral friction is assumed to develop and coefficient of friction needed if no super elevation is provided.
+2.  How is implementation of bolsters help to stabilize the unstable slope? Describe with appropriate sketches the steps of implementation of bolster for purpose of stabilization of degraded slopes.
+3.  State the basic differences between the suspension and suspended bridges. How are the roads transferred into foundation in a typical suspension bridge? Show all important elements of suspension bridge in a neat sketch.
+
+### Section- B
+4.  In the treatment of 25×10³ m/day of water, the amount of chlorine used is 15 Kg/day. The residual chlorine after 10 min contact is 0.2 mg/ltr. Determine chlorine demand in mg/ltr.
+5.  Describe the various steps involved in “ Detailed Feasibility Study and Engineering Design" of an urban water supply system and explain importance of each steps.
+6.  Describe the various types of sewerage system. A sewerage system having a radius of 70 cm is laid with a gradient of 1 in 500. What will be the velocity of flow and discharge through the sewer when running one half full? Assume N=0.012 in Manning's formula.
+
+### Section – C
+7.  Describe the various renewable and non-renewable source of energy used for Nepal.
+8.  Describe the factors, which should be considered in the construction of Hill irrigation canals. Also list the environmental aspects of hill irrigation.
+
+### Section - D
+9.  Discuss about roles of construction materials and technology on strength of buildings. What are the local and modern construction materials and their implications in cost of buildings in Nepal?
+10. Discuss the present state of urban environment of Kathmandu valley. How do you think this situation can be made better?
+
+---
+
+## लोक सेवा आयोग
+## नेपाल इन्जिनियरिङ् सेवा, सिभिल समूह, स्यानिटरी उपसमूह
+### राजपत्राङ्कित तृतीय श्रेणी (प्राविधिक) प्रतियोगितात्मक लिखित परीक्षा
+**२०७२/११/१४**
+**समय :- ३ घण्टा**
+**पत्रः द्वितीय पत्र**
+**विषय : स्यानिटरी सम्बन्धी**
+**पूर्णाङ्क :-१००**
+
+निम्न प्रश्नहरूको उत्तर खण्ड (Section) अनुसार छुट्टाछु‌ट्टै उत्तरपुस्तिकामा लेख्नुपर्नेछ अन्यथा उत्तरपुस्तिका रद्द हुनेछ ।
+
+### Section- A
+1.  Discuss the merits and demerits of river water source (Melamchi Khola) and ground water source (in Kathmandu valley) for water supply scheme in Kathmandu. [10]
+2.  Describe the different types of living organisins found in natural water. Explain their effects on water quality. (6+4)=10
+
+### Section- B
+3.  Write short notes on: (4 + 2.5) = 10
+    a) Infiltration gallery
+    b) OMIT
+    c) Hydrolic grade line
+    d) Break pressure tank
+4.  Differentiate between slow and filter and rapid sand filter. Write down their merits and demerits. (4+6) = 10
+
+### Section – C
+5.  What do you understand by self purification of streams? Explain the various factors affecting self purification. (4 + 6) = 10
+6.  Classify the sedimentation tanks. How can we increase the setting efficiency of particles? [10]
+7.  What are preliminary and secondary treatment process? Describe the working principle of activated sludge processes. [10]
+
+### Section- D
+8.  Why are community mobilization and participation important? Define special role of women participation in WSP. [10]
+9.  a) What are different onsite sanitation systems practiced in Nepal? [4]
+    b) Describe the principles and benefits of Ecological Sanitation. [6]
+10. Elaborate pour- flush toilet and VIP toilet with neat Sketches. (5+5) = 10
+
+**The End**
+
+---
+
+## लोक सेवा आयोग
+## नेपाल इन्जिनियरिङ सेवा, सिभिल समूह, हाइवे उपसमूह
+### राजपत्रा‌ङ्कित तृतीय श्रेणी (प्राविधिक) पदको प्रतियोगितात्मक लिखित परीक्षा
+**२०७२/११/८**
+**समय :- ३ घण्टा**
+**पत्र :- द्वितीय पत्र**
+**विषय : हाइवेसम्बन्धी**
+**पूर्णाङ्कः- १००**
+
+निम्न प्रत्येक खण्ड (Section) को प्रश्नहरूको उत्तर छुट्टाछु‌ट्टै उत्तरपुस्तिकामा लेख्नु पर्नेछ अन्यथा उत्तरपुस्तिका रद्द हुनेछ ।
+
+### Section - A
+1.  What are the various systems of classification of roads? Briefly outline the classification based on location and function. Discuss in details the provision made in Nepal Road Standards (NRS) with respect to functional classification of Road Network of Nepal. (3+2+5)
+2.  Calculate the minimum sight distance required to avoid a head on collision of two cars approaching from the opposite direction, if both cars are at a speed of 90 km/hr. Assume a total perception and break reacton time of 2.5 seconds, coefficient of friction of 0.7 and a brake efficiency of fifty percent. [10]
+3.  Explain: Why design, construction and maintenance of hill road of Nepal need special consideration ? What are the special points to be considered in the alignment of hill road? (5+5) = 10
+
+### Section - B
+4.  Define Traffic Engineering. A vehicle of weight 2 tonnes skids through a distance equal to 50 meter before colliding with another parked vehicle of weight 1 tonne. After collision, both the vehicles skid through a distance equl to 15 meters before stopping. If the weight of both vehicles are equal, compute the initial speed of moving vehicle. Take coefficient of friction as 0.4 [10]
+5.  a) Define tack coat, seal coat and priming. [3]
+    b) Discuss the types of seal coat and process of their application. [4]
+    c) State in brief the classification of road maintenance activities in Nepal. [3]
+6.  Describe the construction procedure for single or double bituminous surface dressing widely used in Nepal by DoR. What do you know about cutback bitumen and bitumen emulsion? (6+4) = 10
+
+### Section – C
+7.  a) What are the main types of foundation used for bridges? [5]
+    b) Describe in detail about underpinning with an aim to stabilize foundations of a bridge? [5]
+8.  a) Suggest methods for improving bearing capacity of weak soil for making foundation. [5]
+    b) Describe in brief the field methods of exploration of soil strata and survey for the construction of foundation of a bridge. [5]
+
+### Section- D
+9.  Mention about Rankine's earth pressure theory [10]
+10. Explain the well sinking operation during bridge construction. How to avoid 'tilt and shifts' and measures to correct "tilt and shifts"? [10]
+
+**The End**
+
+---
+
+## Sanitary-2071/11/4
+
+### Section-A
+1.  What do you mean by aquifers? What are its types? Derive an expression for obtaining discharge from a confined aquifer.
+2.  What are the principal sources of water pollution ?explain their effects on the quality of water.
+
+### Section-B
+3.  A village of Nepal with design year population of 500 has water.demand of 65 liters/capita/day. The demand is to be met by a continuous system of supply from a spring source with a safe yield of 0.3 IPs. The consumption pattern of the village is as follows:
+    Is a balancing reservoir necessary? Calculate the its capacity if necessary.
+
+| Time(hr) | Consumption pattern (%) |
+| :------- | :---------------------- |
+| 5:00-7:00 | 25 |
+| 7:00-12:00 | 35 |
+| 12:00-1700 | 15 |
+| 17:00-1900 | 20 |
+| 19:00-5:00 | 5 |
+
+4.  Sketch typical layout of water supply schemes in
+    I) Hilly zone of Nepal.
+    ii) Tarai zone of Nepal
+    Discus in what cases you design following structures in water supply projects
+    i) Sedimentary tank
+    ii) Filtration unit
+    iii) Aeration chamber
+
+### Section-C
+5.  Calculate the 5 day's 20°c BOD of a sewage of sample whose 5 days 300BOD is 110 mg//tr. Assume the deoxygenation constant at 20°,K20=0.1
+6.  What are the different types of sewerage system? What are their advantage and disadvantage? Suggest which one is best suited for Kathmandu valley and why? Also list the logic behind your selection of the particular type of treatment.
+
+### Section-D
+7.  What do you understand by community participation in water and sanitation sector? Why user's committee is necessary in implementation, operation and maintenance of water supply and sanitation projects. What are the critical features of community management in water and sanitation sector?
+8.  a) Discuss in briefly how global warming is affecting water supply sector in nepal and what will be the proper remedial measures?
+    b) As per environment protection Act/Environment protection Regulation of Government of Nepal discuss in the brief the criteria for conducting IEE/EIA for development projects.
+9.  Design a septic tank for a hotel of any school where 125 residential students are regularly living that school. Also design the soil absorption system for the disposal of the septic tank effluent the percolation rate as 20 minutes per cm.
+
+---
+
+## Highway-2071/11/9
+
+### Section-A
+1.  Explain the advantage and disadvantage of road transport. Explain the factors that affects the factors that affect the selection of highway alignment.
+2.  The radius of a horizontal highway curve is 450 m, super-elevation provided is 1 in 15 and the width of pavements curve is 7.5. if the rate of change of centrifugal acceleration is not to exceed 0.45 m/sec² and the rate of introduction of supper elevation (about the inner edge of pavement) is not to exceed 1:150, design the length of horizontal transition curve for a design speed of 100km.ph.
+3.  Explain in detail the special points that must be considered in the alignment of hill road of Nepal.
+
+### Section-B
+4.  a) What are the general requirements of traffic control devices?
+    b) What are traffic islands?
+    c) Briefly describe various types of traffics islands.
+5.  a) What is EAL or ESA? Describe its significance in design of road pavements.
+    b) What are the various methods of design of road pavements?
+6.  Why road maintenance is necessary? Describe different type of road maintenance. Explain the maintenance of the bituminous pavement.
+
+### Section-C
+7.  a)what are the different types of landslide ? Describe them briefly.
+    b) How can slope stability improved by plants?
+8.  a) What is tunneling? Briefly describe ventilation and lighting requirements for tunnels.
+    b) if you are given an opportunity to select an idle bridge site, what do you consider? And, why?
+
+### Section-D
+9.  Define active and passive earth pressure in soil. Derive an expression for active and passive earth pressure by Rankine's method.
+10. a) Describe briefly the design procedure of a mat foundation using conventional method of design.
+    b) How do you determine linear water way for a bridge to be constructed in an alluvial plain? What will happen if the linear water way is not sufficient?
+
+---
+
+## लोक सेवा आयोग
+## राजपत्रांकित तृतीय श्रेणी, नेपाल इन्जिनियरिङ सेवा, सिभिल समूह, हाइवे
+### उपसमूहको प्रतियोगितात्मक लिखित परीक्षा
+**२०७०/११/११ गते**
+**समयः- ३ घण्टा**
+**पत्रः- द्वितीय**
+**विषय : हाइवेसम्बन्धी ।**
+**पूर्णांक :- १००**
+
+निम्न प्रश्नहरूको उत्तर खण्ड (Section) अनुसार छुट्टाछु‌ट्टै उत्तर पुस्तिकामा लेख्नुहोस् ।
+
+### Section A
+1.  Explain the necessity of highway planning in Nepal. What are the uses of fact finding surveys? How are these used and interpreted? [10]
+2.  The radius of a horizontal circular curve is 10 meters, the design speed is 50 kmph, and the design coefficient of lateral friction is 0.15. Calculate the super elevation if full lateral friction is called into play. [10]
+3.  a) Define bio-engineering. Discuss its functions and limitations. [5]
+    b) Los Angles abrasion test. [5]
+4.  Draw highway intersection in detail and show the traffic directions. [10]
+    a) Four legged intersections.
+    b) Multi legged intersections
+    c) Channelized intersections
+    d) Three legged intersections
+
+### Section C
+7.  What do you understand by Pretensioning and Post tensioning in prestressed concrete bridges: Explain the special features of prestressed concrete. (2+2 + 6 = 10)
+8.  What are the different types of soil classification? Describe the soil classification by unified soil classifications system method. [10]
+
+### Section D
+9.  Design a combined footing for two columns 32 cmx 32 cm carrying load of 60,000 kg and 40 cm carrying load of 80,000 kg. The column are spaced at 3.4 m centers and the bearing capacity of soil is 15 tones/m². Calculate the depth of the footing, reinforcement required at transverse section and cantilevers. [10]
+10. What are the different types of foundation for bridge? Describe briefly when each of these types is used. [10]
+
+---
+
+## लोक सेवा आयोग
+## राजपत्रांकित तृतीय श्रेणी, नेपाल इन्जिनियरिङ सेवा, सिद्धिल समूह, जनरल
+### उपसमूहको प्रतियोगितात्मक लिखित परीक्षा
+**२०७०/११/९ गते**
+**समयः- ३ घण्टा**
+**पद :- द्वितीय**
+**विषय : जनरलसम्बन्धी ।**
+**पूर्णांक :- १००**
+
+निम्न प्रश्नहरूको उत्तर खण्ड (Section) अनुसार छुट्टाछुट्टै उत्तर पुस्तिकामा लेख्नुहोस् ।
+
+### Section A
+1.  What do you mean by transport plus concept? Which agency in Nepal is adopting this concept? Why this concept is important in Nepalese mountainous and hilly roads? Write down pros and cons of this concept. [10]
+2.  Draw a typical cross section of road with all elements. Describe briefly about each element of cross section of road. [10]
+3.  Differentiate the specific planning and design considerations for the suspension bridge from those for the suspended trial bridge. [10]
+
+### Section B
+4.  List the various impurities present in surface water sources. What are their effects on human health? Describe the various components of water treatment plant generally used for purification of water from such sources. [10]
+5.  Describe the causes of various water borne diseases transmitted into human body with their resources of transmission routes and preventive measures.. [10]
+
+### Section C
+6.  Mention the points to be considered topographically, geologically, hydrologic ally and economically at the planning, layout and design stage of a small hydropower project. [10]
+7.  What is uplift? How can uplift be determined? Show this with a neat sketch of the cross section of a weir with two rows of sheer piles at the ends. Explain how will determine the uplift pressure at any point of the weir foundation. [10]
+8.  Describe about the river training work. Give classification and types of river trainings work in Nepal. [10]
+
+### Section D
+9.  Write short notes on: (5+5=10)
+    a) Indigenous technology in building construction.
+    b) Urban planning needs in Nepal.
+10. a) Explain the impacts of modern construction technology in the society. [5]
+    b) Explain the participatory approach in local infrastructure constructin at various stages of construction. [5]
+---
+
+## Irrigation-2067 : Chaitra
+
+1.  Describe the cause food grain deficit in the country with highlight of functional management of irrigation system
+2.  Agency managed irrigation systems in Nepal are performing less efficiently why are the main reasons behind this? How can they be improved?
+3.  Describe the various types of head works and its main component and functions. Which types of head work is most suitable for the hilly and mountainous regions of Nepal. Give reasons.
+4.  Why canal lining is necessary in light soil? Describe in brief, the various types of lining is used in hills and terai of Nepal?
+5.  Write short notes on the following
+    a. Hydraulic jump
+    b) Launching apron
+    c) Water logging
+    d) Surface drainage
+6.  a) Write short notes on:
+    i) Surface drainage and its application
+    ii) Sub-surface drainage and its application
+    iii) Drainage coefficient(D.C)
+    b) Determine the size at the outlet of a 6 hectare drainage system, if the D.C is 1cm and tile grade is 0.03%/. Assumes rigidity coefficient of the materials is 0.011.
+7.  What are the needs for controlling rivers in Nepal? list the summary of design procedure for river training works in the hills and plains of Nepal.
+8.  What is run-off?what are the factors that affect run off from a catchment area? Describe the hydrological cycle in brief with neat sketch.
+9.  Given below are observed flows from a storm of 6 hours duration on a stream with a catchment area of 500km². Assumes the base flow to be zero derive the ordinates of a 6 hour unit hydrograph.
+
+| Time hours | 0 | 6 | 12 | 18 | 24 | 30 | 36 | 42 | 48 | 54 | 60 | 66 | 72 |
+| :--------- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
+| Observed flow m³/s | 0 | 100 | 250 | 200 | 150 | 100 | 70 | 50 | 35 | 25 | 15 | 5 | 0 |
+
+10. What is aquifer? Describe the different types of wells and their classification .describe different types of wells for different types aquifer.
+
+---
+
+## Sanitary-2067: Chaitra
+
+### Section-A
+1.  What are the different sources of water? What are the considerations to be taken in selecting the source of water.
+2.  Write short note on:
+    a) Ph valuae
+    b) Water demand
+    c) Hydraulic garde line
+
+### Section-B
+3.  Calculate average water demand in litre per second (lps) for typical village with population of 1000. Find future average and design flow after 20 years. Define peak factor.
+4.  It is possible to have no reservoir for a gravity flow schme? why are elevated reservoirs provided in water supply systems? Explain briefly.
+5.  What are the main differences between the basic principles of design of sewers and water mains? explain the significance of minimum and maximum velocities of flow in the design of sewers.
+6.  Write down short notes on:.
+    a) B.O.D
+    b) Ecological sanitation
+    c) Inverted siphon
+7.  What is self-cleansing velocity? How it is obtained in case of sewers?
+8.  Describe the procedures laid down in the guidelines on the implementation and management of water supply project, 2047 for the formation of water usrr's committee. also mention its duties and responsibilities.
+9.  Give the definition of environmemntal impact Assessment(EIA). Explain some of the major government rules and regulations for EIA
+10. The role of the government agencies has been transformed to the role of a facilator from the provider of the system. How do you look at this statement in the context of sustainable development of water supply and sanitation sector?
+
+---
+
+## General- 2067: Chaitra
+
+### Section-A
+1.  Enumerate the various mean of transport. Describe the considerations that lead to selection of a particular type of transport.
+2.  In context of our difficult terrain and topography at one hand and economics situation at other, how could Trail bridge network in our hilly region could play effective role to alleviate transportation access, elaborated with normal.
+3.  What are the steps to considered during the preparation of a wearing course of a metaled highway
+
+### Section-B
+4.  Write down the different water borne diseases transmitted through polluted water. Explain their transmission routes and preventive measures.
+5.  Draw a flow chart of each component of a typical rural water supply system and explain the function of each component.
+
+### Section-C
+6.  In view of emerging crisis in energy sector, what are your suggestions in context of alternate energy system which ought to be developed in Nepal so that we do not depend solely on conventional system?
+7.  What are the reasons that farmers managed irrigation system in Nepal seems to be pragmatic as well as cost effective? How the coverage the coverage of irrigation be could widened In Nepal so that farmers could be benefited?
+8.  Explain the objectives of river training works. Explain briefly the different methods of river training works.
+
+### Section-D
+9.  What are the roles of National Building codes in Nepal? Hoe does the code address the problem of earthquake? How could the code be made effective?
+10. Name the various steps/process involved in the 'Environmental impact assessment of a project and explain the function of each step/process.
+
+---
+
+## Highway- 2066
+
+1.  a)How the roads are classified in Nepal? And which institutions are responsible for its development and maintenance?
+    b) Within strategic road network how many highways and feeder roads are there?
+2.  a) Calculate the stopping sight distance for a road for which the design speed is 50 km ph. Assume that the roadway is level, the coefficient of friction between the road surface and tyres is 0.4 and the reaction time of the driver is 3 sec.
+    b) What are the elements of highway cross section? Describe them with a sketch.
+3.  a) What are the different components of hill road drainage system? Make a sketch for a typical drainage system of hill road.
+    b) Describe the difference between and tar. Explain the tests on bituminous materials: penetration test and viscocity test.
+4.  a) What are the object and scope of traffic engineering? Explain briefly.
+    b) What are the different cause of traffic accidents? Discuss briefly explain various measures that may be taken to prevent accidents.
+5.  a)what is the ESWL? Explain the concept in the determination of equivalent load.
+    b) Distinguish between the full grouted and semi-grouted bituminous macadam.
+6.  a) Discuss in brief types and methods of maintenance road pavement.
+    b) Write down the urgency and importance of highway maintenance. Classify the inspection procedures for the same.
+7.  What is the reason of providing reinforcement bars on the upper side of beam while designing cantilever beams? What is the purpose of designing double reinforced beams?
+8.  a) Discuss the various factors that affect the permeability of soil.
+    b) What are the causes of slope failures?explain the use of bio-engineering in stabilizing slopes.
+9.  Write down the assumption of rankine's theory and derive the expression for active and passive pressures.
+10. a) what types of foundations are used in bridge construction? explain the each in brief
+    b) how do determine the bearing capacity of soils? What are the factors influencing bearing capacity?
+
+---
+
+## High Way- 2065
+
+1.  What are the technologies available to determine best route location of highways?
+2.  a) What are the basic factors which influence the visible dimensions of a road?
+    b) what correction is required in horizontal curves to negotiate the speed and stability of vehicles?
+3.  It is argued that road that road construction in hills is one of the major causes of natural environmental degradation.examine how the road construction project in hills effect the environment? What measures would you suggest to take up at various stages of the project for minimizing the environmental damages?
+4.  a) Explain the post card methods of O and D surveys. Discuss the advantage and disadvantage of this methods?
+    b) how are the road intersection planned ? Enumerated the various traffic controls needed at an intersection.
+5.  What are flexible and rigid pavements? Describe the with sketch. Which types of pavements is suitable for hill roads in Nepal? Give reasons.
+6.  a) how planning for road maintenance operations are carried out?
+    b) why is hydraulic analysis necessary for river bank and protection structures?
+7.  Draw a detail configuration of live load of IRC class A bridge loading for a design of a single lane R.C.C bridge
+8.  What is a veg etation structure? Describe with sketches vegeatative engineering techniques for slope stabilization
+9.  Coumpute the intensities of active and passive earth pressure at depth of 8 meteres in dry cohesionless sand an angle of internal friction of 30º and unit weight of 1.8t/m³ what will be in tensities of active and passive earth pressures if the water level rises to the grund level? take saturates unit weight of sand as 2.2 t/m3.
+10. What is the difference between pile and well foundation in bridges? Explain with sketches.
+
+---
+
+## लोक सेवा आयोग
+## राजपत्रांकित तृतीय श्रेणी, नेपाल इन्जिनियरिङ सेवा, सिभिल समूह, जनरल
+### उपसमूहको शा.अ. स्तर, समावेशी प्रतियोगितात्मक लिखित परीक्षा
+**२०६५/१०/१५ गते**
+**समयः- ३ घण्टा**
+**पद :- द्वितीय**
+**विषय : जनरलसम्बन्धी ।**
+**पूर्णांक :- १००**
+
+निम्न प्रश्नहरूको उत्तर लेख्नुहोस् ।
+
+### Section A
+1.  Draw a sketch of a suspension bridge and indicate its components. [10]
+2.  Calculate the stopping sight distance for following 3 cases on a highway for a design speed of 80kmph, Reaction time is 2 secs and friction coefficient is 0.4. [10]
+    a) When grade is 4% descending
+    b) When grade is 3% ascending
+    c) When road is flat.
+3.  Explain the use of bio engineering in Hill roads and its advantages compared to other method. [10]
+4.  Briefly explain the following: (4 + 3 + 3) [10]
+    a) Solid waste management
+    b) Source of water supply, their selection and management.
+    c) Sources of pollution for air, water and land
+5.  a) How the operation and maintenance of water supply and sewerage system can be improved? [5]
+    b) Community based water supply and sewerage systems are feasible and sustainable in Nepal. Justify this statement. [5]
+6.  Write short notes on:
+    a) Alternative Energy system in Nepal [5]
+    b) River diversion works [5]
+7.  Explain the specific consideration to be provided for the design, operation and management of Hill irrigation system. [10]
+8.  Write short notes on:
+    a) Farmer managed irrigation system [5]
+    b) Flood control, its necessary and mitigation measures [5]
+9.  Note the type of foundation employed in a building constructed recently in your area. List and explain briefly obvious reasons why this type of foundation was selected. [10]
+10. What do you mean by participatory approach in planning implementation maintenance and operation of local infrastructures ? Explain by giving examples. [10]
+
+---
+
+## लोक सेवा आयोग
+## राजपत्रांकित तृतीय श्रेणी, नेपाल इन्जिनियरिङ सेवा, सिभिल समूह, इरिगेशन
+### उपसमूहको समावेशी प्रतियोगितात्मक लिखित परीक्षा
+**२०६४/१०/२३ गते**
+**समयः - ३ घण्टा**
+**पत्रः - द्वितीय**
+**विषयः इरिगेशनसम्बन्धी ।**
+**पूर्णांक :- १००**
+
+निम्न प्रश्नहरूको उत्तर लेख्नुहोस् ।
+
+1.  a) What factors should be considered while formulating an irrigation scheme? [5]
+    b) What are the modes of irrigation? What are the advantages and disadvantages of each irrigation methods'? [5]
+2.  a) What do you understand by the Duty of water at the headwork's of an irrigation canal and at the outlet to the field? [5]
+    b) What measure would you suggest to improve "Duty" in an existing canal system? [5]
+3.  What are the cross-drainage (C.D.) works required in an irrigation system? Define the salient features of each type of CD works? What should be the minimum foundation depth of aqueduct below river bed? State the formula used from the calculating of scour depth of CD structure. [10]
+4.  a) What do you mean by Hydraulic Design Criteria of Cross Drainage Structures? Briefly mention Design procedure for Determining Uplift Pressures in a floor of hydraulic structures (Headworks, CD structures, drops etc.) [7]
+    b) Write short note on: [3]
+    i) Scour Depth
+    ii) Under Sluice
+5.  Define exit gradient. How is exit gradient represented? Describe how a structure fails if exit gradient is not balanced. [10]
+6.  a) What are the main causes of soil erosion and landslide in context to hill and mountainous areas of Nepal? Briefly mention their reinedial/mitigation measures. [4]
+    b) Mention cause of flood in terai and inner valley. What are the methods of river training works with flood control generally adopted in flood plain? Also mention best solution of river control in alluvial plain in the terai. [6]
+7.  List the basic step by step logical design process for irrigation development of a medium scale irrigation project. [10]
+8.  Answer the following questions: [10]
+    a) i) What is hydrological cycle and what is its inmportance?
+    ii) What is meant by rain gauge and what is their use?
+    iii) Explain intensity duration curves, infiltration and percolation.
+    b) Enumerate the different methods of measuring discharge. How will you measure the discharge of (i) a river (ii) small stream (iii) a canal.
+9.  a) What are the advantages and disadvantages of ground water irrigation is compared to surface canal irrigation? [10]
+    b) A 30 cm diameter well penetrates 25-m, below the static water table. After 24 hours of pumping at 5400 liters per minute, the water level in a test well at 90.0 m is lowered by 0.53 m and well 30.0 m away, the drawdown is 1.11 m. Find out the transmissibility of the aquifer.
+
+**The End**
+
+---
+
+## लोक सेवा आयोग
+## राजपत्रांकित तृतीय श्रेणी, नेपाल इन्जिनियरिङ सेवा, सिभिन्न समूह, स्यानिटरी
+### उपसमुहको समावेशी प्रतियोगितात्मक लिखित परीक्षा
+**२०६८/१०/११ गते**
+**समयः - ३ घण्टा**
+**पत्रः - द्वितीय**
+**विषय : म्यानिटरी सम्बन्धी ।**
+**पूर्णांक :- १००**
+
+निम्न प्रश्नहरुको उत्तर लेख्नहोस् ।
+
+### Section-A
+1.  What do you understand by inverted cone of depression and circle of influence in the well? Name the different method of tube well boring and indicate the conditions where each one is suitable. Sketch and explain geological condition which give rise to an artesian well. [10]
+2.  Explain the procedure for site selection permanent intake in ace when the water leveling fluctuating to large extent during dry and wet season. [10]
+3.  What are the different types of distribution service reservoir used in water supply project so Nepal? How its storage capacity is determined? Discuss in brief. [10]
+4.  It is required to supply water to a population of 20000 (twenty thousand) at a per capita demand of 150 liters per day. The disinfectant used for chlorination is much beaching power is required annually at the water works if 0.3 pm of chlorine does is required. [10]
+
+### Section-B
+5.  Outline the importance of community participation for sustainability of the water supply project point out the challenges. [10]
+6.  a). What is self-cleaning velocity and non-scouring velocity in a sewer? Why sewers are not designed to flow full? [4]
+    b) Design a sewer to serve a population of 36000; the daily per capita water supply allowance being 135 liters, of which 80% find its way into the sewer. The slope available for the sewer to be laid is 1 in 625 and the sewer should be designed to carry 4 times the dry weather flow when running full. What would be the velocity of flow in the sewer when running full? Assume n = 0.012 in Manning's formula? [6]
+7.  Sewage Treatment Plant मध्ये Oxidation Ditch को फाइदाको बारेमा उल्लेख गर्नुहोस् । [10]
+
+### Section-C
+8.  Describe different stages in sludge digestion process briefly. What are the different factors affecting sludge digestion and how they are controlled ? Do you think sludge disposal by laboring in case of Nepal is appropriate and why? [10]
+9.  Define eco-sanitation. What can you suggest socio-economically poor village people of disposal septic tank effluent, whereas they are facing with their hand-to-mouth problems? [10]
+
+### Section-D
+10. a) Explain the role of CO2 on green house effect. [5]
+    b) Why Initial Environmental Examination (IEE) is necessary for water supply project. [5]
+
+**The End**
+
+---
+
+## लोक सेवा आयोग
+## राजपत्रांकित तृतीय श्रेणी, नेपाल इन्जिनिरिङः सेवा, सिभिल समूह, हाइवे
+### उपसमूहको खुला प्रतियोगितात्मक लिखित परीक्षा
+**२०६४/११/६ गते**
+**समयः - ३ घण्टा**
+**पत्र :- द्वितीय**
+**विषय : हाइवे उपसमूह सम्बन्धी ।**
+**पूर्णांक :- १००**
+
+अनिम्न प्रश्नहरूको उत्तर लेख्नुहोस् ।
+
+### Section - A
+1.  A hill road has a section as shown in the figure. Calculate the quantity of earthwork in a length of one kilometer. [10]
+2.  a) Describe with sketches the elements of highway cross sections. [10]
+    b) Why are transition curve provided in the horizontal alignment of a highway explain with sketch. (5+5)
+3.  a) What are the criteria that should fulfilled while designing subsurface drains? [4]
+    b) What are the various tests that are used for assessing the suitability of road aggretages. [3]
+
+### Section-B
+4.  a) What is a rotary intersection? What are the advantages and limitations of traffic rotary intersection? [5]
+    b) What are main causes of traffic accidents in Kathmandu? What measures should be taken to mitigate them? [5]
+5.  a) What are the functions of highway drainage? list the data necessary to glean before deciding on the drainage system for a road. [5]
+    b) A bituminous mix has been prepared with 10% asphalt by weight of mixture. Assuming the specific gravity of asphalt to be 1 and that of void less specimen of the mixture to be 2.3, calculate the effective specific gravity of the aggregate. [5]
+6.  a) What are the categories of maintenance as defined by DOR? What is the scope of periodic maintenance for paved road. [4]
+    b) How is the depth of scour determined for the design of bridge foundations. ? [6]
+
+### Section – C
+7.  a) Derive on expression for active earth pressure on the vertical back face of a E.W supporting granular soil having horizontal surface. [6]
+    b) What is the effect of (a) depth (b) breadth and (c) ground water level on the bearing capacity of cohesive soils as per Terzaghi's formula? (1+1+2) [4]
+8.  a) Explain soil as three phase system with a neat sketch, define the following terms and give their interrelationship with usual notations: water content, degree of saturation, porosity, void ratio and unit weight of water, solid and soils at different states. [5]
+    b) Write short notes on:
+    a) Mohr coulomb theory of shear strength. [3]
+    b) Primary and secondary consolidation [3]
+    c) Causes of slope movements and failures. [4]
+
+### Section – D
+9.  a) What are the foundation conditions under which mat foundation is preferred? [5]
+    b) What is pile group efficiency ? How is the bearing capacity of a pile group determined in cohesive soils? [5]
+
+**The End**
+
+---
+
+## लोक सेवा आयोग
+## राजपत्रांकित तृतीय श्रेणी, नेपाल इन्जिनिरिङ सेवा, सिभिल समूह, जनरल
+### उपसमूहको खुला प्रतियोगितात्मक लिखित परीक्षा
+**२०६४/११/५ गते**
+**समयः ३ घण्टा**
+**पत्र :- द्वितीय**
+**विषय : जनरलसम्बन्धी ।**
+**पूणांक :- १००**
+
+निम्न प्रश्नहरूको उत्तर लेख्नुहोस् ।
+
+1.  What are the design and construction problems of hill roads? What do you understand by obligatory points? What are the special considerations which need to be followed in the selection of alignments for roads in mountainous regions? [10]
+2.  Describe briefly the methodology used in the construction of gravel roads. Differentiate between surfaced dressing treatment and otter seal construction. [10]
+3.  The time for a clay layer to achieve 99% consolidation is 10 years. What time would be required to achieve 99% consolidation if the layer were twice a thick, five times more permeable and three times more compressible? [10]
+4.  Explain why safe disposed of waste water is necessary. Provide comparison between separate and combined sewer system. [10]
+5.  What are the various types of treatment of water to make it safe for drinking. Explain briefly the competent of slow sand filter. [10]
+6.  a) Describe about the components of a micro hydro system with neat sketches. [5]
+7.  Describe with sketches various types of river training works and protection works needed for rivers in the mountains and in the plains. [10]
+8.  What are the different methods of irrigation? Briefly explain their function and suitability. [10]
+9.  Explain why urban planning is necessary in Nepal. Describe the challenges being faced in this sector. [10]
+10. a) Describe about the sources of pollution in Nepal, How these sources can be controlled? [5]
+    b) How can you related the technology development with environment and society? [5]
+
+**The End**
+
+---
+
+## Sanitary- 2063
+
+1.  How would you use shallow and deep tube wells for the water supply in the terai? Under what conditions each is used and why?
+2.  A village in mild western development region of Nepal has a design year population of 500per capita demand recommended for that particular villafe is 65 litre per day the demand is tobe met by a continuos system of supply from a spring source with safe yield of 0.5 Ips the consumption pattern is
+
+| Time(hr.) | Consumption(%) |
+| :-------- | :------------- |
+| 5-7       | 25             |
+| 7-12      | 35             |
+| 12-17     | 20             |
+| 17-19     | 20             |
+| 19-5      | 0              |
+
+    Is a balancing storage tank storage? Calculated its capacity if necessary
+
+3.  What is mean by treatment of water and why it is necessary what do you mean by flocculation?
+4.  Why aeration is used in water treatment plants? Is it more commonly used with ground water or surface water and why ? give reasons
+5.  Write short notes on
+    a) Impounding reservoirs
+    b) Break point chlorination
+    c) Artesian well
+6.  What are the relative advantage and disadvantage of separate and combined sewer system?what are the design considerations for the two types of sewer systems?
+7.  Explain the aerobic and anaerobic decomposition of sewage
+8.  What is an oxidation pond? How does if function?what information (data) do you require for its design?
+9.  Describe what do you know about the the physical, the chemical and the biological characteristics of sewage
+10. a) What do you understand by greenhouse effect? What are its causes? How it can be mitigated?
+    b)list in details the physical, biological and socio-economic baseline information that have to be collected during EIA study of a water supply project.
+
+---
+
+## OLD SUBJECTIVE QUESTIONS
+## General-2062
+
+1.  Describe the cross drainage structures and sub-surface drainage.
+2.  How many cables are there in a suspension bridge? Describe function of each type. How is the load on the bridge transferred to the ground?
+3.  In any transportation planning exercise, what are the major technical considerations to be given attention to. In your objective view, why very often our planning exercise fail to address the main issues?
+4.  In context of scarcity of land fill sites, solid waste management has become difficult task in Kathmandu valley. What are your suggestions to reduce and recycle the wastes so that pressure on land fill site could be out down? Provide pragmatic solutions.
+5.  You are required to supply drinking water to some community in a hilly region. Describe the various steps you will take to achieve this in the context of Nepal.
+6.  What is difference between the renewable and non-renewable energy? Also write down the advantages and disadvantages of solar energy, bio-gas and hydropower.
+7.  If you were to design an irrigation system to be totally maintained and managed by local farmers after construction. What factors would you consider in deciding about line and unlined sections of canal? Give technical and economical reasons and discuss.
+8.  Design an irrigation canal of 15 m/s capacity, whose side slope coefficient and bed slope are 0.65 & 0.02% respectively with Manning's roughness coefficient of 0.023 so that its flow velocity could be lay in between non-silting and non-scouring value.
+9.  a) What are the common building construction materials used for construction of residential buildings? Describe one building material in details.
+    b) Write short notes on (any two)
+    i) water cement ratio of concrete mix.
+    ii) mixing concrete
+    iii) Bulking sand
+    iv) Curing of concrete
+10. As EIA National Guidelines now it is mandatory to conduct EIA for significant roads in Nepal. How does it help environmental as well as the road network? Give a critical analysis.
+
+---
+
+## Irrigation- 2063
+
+1.  Write short note on the following
+    a) Status of irrigation development in Nepal
+    b) Crop water requirements calculation by penman methods
+    c) Types of irrigation
+2.  Describe the factors to taken into the account while fixing the alligment of irrigation cannals
+3.  What are the basic difference between kennedy and Darcy theory. Which theory is used in the design of cannal systems in Nepal and why? For a channel to be regime briefly mention the condition that is to be adhered.
+4.  Describe the effect of construction of a weir in the river regime. What are the main causes of failure of weir on nermeable foundation and their ramedies?
+
+---
+
+5.  What do you mean by hydraulic jump and why it is necessary to be formed in hydraulic structures? for a stable and well balanced jump which valued of the froud numbers should to get the anticipation result?(1)fr-1(2) fr-1 to 1.7 (3) fr
+6.  River fliowing through Nepal carries large qunantity of sediment load within permissible limits to control the flooding of agricultural land?
+7.  Do you think ground water irrigation is suitable for the cultivation of crops which required more water like paddy or sugarcane if not why?
+8.  Explain with the help of a neat sketch the hydrologic cycle in nature indicating its various phase and describe briefly basic hydrological data require for planning irrigation projects
+9.  a) define the hydrograph .draw a single peaked hydrograph and indicate is various components.
+    b) what are the basic propositions of the unit hydrograph theory?
+10. Ihow many types of aquifer exist below the ground surface and what is the main difference between them? Briefly drscribe the what types of well, shallow or deep is feasible in confined and unconfined aquifer?
+
+---
+
+## Irrigation- 2066
+
+1.  What is the present status of irrigation development in Nepal?what are the factors to be considered in accelerating the development of 'round the year irrigation' in Nepal
+2.  Name the method of applying water in irrigation fields.how do you define small scale irrigation project in context of Nepal. Write dowm in the brief its scope in Nepal.
+3.  Define critical depth of flow in canal.
+4.  Design a regime canal for a discharge of 15m3/sec with slit factor=1. Assumes a trapezoidal section having side slopes 2:1(H:V)
+5.  Derive the manning's equation for the a regime flow of a cannal design with consideration of the chezy's equation
+6.  Write down the shorts notes on:
+    i. Hydraulic jump
+    ii. Advantage of canal lining
+    iii. Exist gradient
+    iv. Cause of failure of weir on permeable foundation
+    v. Water measuring devices used in water management
+
+---
+
+6.  How serious is the problems of water logging in irrigated areas in Nepal? State the various drainage systems required in removing water logging in irrigation fields/
+7.  What is river training works? Describe briefly the different types of river training works and its usefulness in the various conditions
+8.  What effect you foresee on hydrological cycle due to climate change? Suggest the ways and means in mitigating climate change effects on irrigation projects.
+9.  What do you mean by: "peak flow"? What is the importance of having a correct peak flow estimation? State the different methods of peak flow estimation.
+10. Describe the different methods for recharging ground water table preserving ecological balance in nature of the south Asian regions.
+
+---
+
+## Highway-2067 : Chaitra
+
+### Section - A
+1.  a) Discuss the planning approach for highway construction and development in Nepal.
+    b) Discuss the controlling factors that should be considered in the alignment of highways.
+    c) How are roads classified in Nepal according to the provision made in NRS 2045?
+2.  a) What are the elements of cross-section of a highway? Make the sketches of typical cross section for:
+    i) Embankment
+    ii) Cutting
+    ii) Urban
+    b) What are the effects of centrifugal force acting on a vehicle moving on horizontal curve? How these effects are calculated?
+3.  a) What are the special points to be considered in the selection of alignments of hill road? Discuss
+    b) Write short notes on
+    i) Hair pin bend
+    ii) Prevention of landslides in hills roads.
+    c) How to manage drainage in hills roads? Discuss.`;
+
+const SYLLABUS_MD =`lok sewa aayog
+nepal engineering sewa civil samuha antargat ka general, highway, hydropower, irrigation, sanitary ra airport upasamuhaharuko
+rajapatrankit tritiya shrenika padharuko khula pratiyogitatmak parikshako pathyakram
+
+# dwitiya patra (Paper II): Technical Subject
+
+## Section (A) - 30 Marks
+
+1.  Structural Engineering
+    1.1 Reinforced concrete structures: difference between working stress and limit state philosophy, design of beam and slab, analysis of RC beams and slabs in bending, shear, deflection, bond and end anchorage, design of axially loaded columns; isolated and combined footings, introduction to pre-stressed concrete
+    1.2 Steel and timber structures: standard and built-up sections: design of riveted, bolted and welded connections, design of simple elements such as ties, struts, axially loaded and eccentric columns, column bases, design principles of timber beams and columns
+    1.3 Requirements of earthquake resistant building construction
+    1.4 Mandatoryrule of thumb in building design
+    1.5 Structural design of bridge: various types of bridges, selection and type of bridges and economic span length, types of loads, forces and stresses, live load, impact load, wind load, longitudinal forces, lateral loads, centrifugal force, width of roadway and footway, general design requirements, solid slab bridges, deck girder bridges, B.M. in slab supported on four edges, distribution of live loads on longitudinal beams, method of distribution coefficients, Courbon's method, design of a T- beam bridge, balanced cantilever bridge,design of box culvert
+2.  Geotechnical Engineering
+    2.1 Soil Mechanics
+        2.1.1 Identification and classification of soils
+            Field identification of soils and soil classification: descriptive, textural, ISI, MIT and USCS
+        2.1.2 Permeability of soils
+            Factors affecting permeability of soil, determination of coefficient of permeability: laboratory and field methods
+        2.1.3 Effective stress
+            Factors affecting effective stress, capillary rise, quick sand condition
+        2.1.4 Seepage analysis
+            Flow net, application of flow net, seepage below concrete dam, sheet pile and safety check, seepage analysis through earthen dam and filter layer design, techniques to reduce discharge and to increase safety of dam
+        2.1.5 Compaction of soil
+            Concept of compaction, lab test, factors affecting compaction, specification of compaction, field control of compaction, methods of compaction in field and their suitability,special parameters to be considered for compaction in road, earthen dam
+        2.1.6 Shear strength of soils
+            Concept of shear strength, principal planes and principal stresses, Mohr-Coulomb theory of shear strength, calculation of normal stress and shear Stress at different plane, relation of principle stress at failure condition, types of shear tests: direct shear test, unconfined compression test, triaxial test, vane shear test
+        2.1.7 Consolidation and settlements
+            Concept of consolidation, types of consolidation, test of consolidation, NC, OC, OCR, preconsolidation pressure, calculation of settlement,settlement of structures resting on soil: its nature, causes and remedial measures
+        2.1.8 Stability of slopes
+            Causes of slope failures, types of slope and slope failures, critical surfaces and factor of safety, method of stability analysis and stability number, bio engineering: advantages, principles, concept, components and uses in stabilization of slope
+    2.2 Foundation Engineering
+        2.2.1 Introduction
+            Types of foundation, factors affecting on selection of foundation, requirement and criteria of ideal foundation, types of load for design of foundation, criteria for selection of depth of foundation
+        2.2.2 Earth pressure and retaining structures
+            Rankine's earth pressure theory, Coloumb'searthpressure theory, trial wedge theory, types of earth pressure, types of retaining wall, stability analysis of earth retaining structures, techniques to increase stability of retaining wall
+        2.2.3 Bearing capacity and settlements
+            Types of bearing capacity and factors influencing bearing capacity, effects of various factors on bearing capacity, modes of foundation failure, Terzaghi's general bearing capacity theory, ultimate bearing capacity of cohesionless and cohesive soils, settlement: types,nature and effects
+        2.2.4 Types of foundation and their suitability in context of Nepal
+            Condition to use spread or strap or combined footing; mat: types, bearing capacity, construction approach,floating mat, compensating mat; pile: types, load carrying capacity, negative skin friction (NSF) and calculation; comparision between pile, pier, and caisson; caisson: types, bearing capacity, construction of well, tilt and shift of well and its retrofication and prevention
+        2.2.5 Design of foundation
+            Design of spread foundation, combined footing, strap footing, mat foundation, pile foundation, well foundation
+        2.2.6 Foundation stabilization, underpinning and geotechnical process
+            Soil stabiliazation, stone column, sand pile, dynamic deep compaction, grouting and its methods, methods of underpinning, methods of dewatering
+    2.3 Site Investigation and Soil Exploration
+        2.3.1 Purpose of site investigation, planning of investigation, stages of investigation, methods of boring, types of soil samples
+        2.3.2 In-situ test: standard penetration test, dynamic cone penetration test, correction of N value, calculation of bearing capacity using N value for isolated footing, mat, pile and well, plate load test, pile load test
+        2.3.3 Preparation of site investigation report
+
+## Section (B) - 25 Marks
+
+3.  Water Resource Engineering
+    3.1 Hydrology and Sediment
+        3.1.1 Rainfall measurements and related analysis
+        3.1.2 Flow measurements, rating curve and generation of flow data
+        3.1.3 Estimation of long term daily and monthly flows, low flows
+        3.1.4 Hydrograph analysis, synthetic unit hydrographs
+        3.1.5 Flood frequency analysis, estimation of design flood
+        3.1.6 Collection of sediment data, sediment rating curve, estimation of sediment yield and concentration, reservoir sedimentation
+        3.1.7 Ground water hydrology
+    3.2 Hydraulics
+        3.2.1 Fluid pressure, fluid kinematics, dynamics of flows
+        3.2.2 Boundary layers, uniform flow, steady flow, laminar and turbulent flow
+        3.2.3 Bernoulli's equation and its applications
+        3.2.4 Laminar and turbulent flow in pipes
+        3.2.5 Concept of specific energy and gradually varied flows in open channel
+        3.2.6 Hydraulic jump and its types, flow profiles
+    3.3 Irrigation
+        3.3.1 Function, advantages and disadvantages of irrigation; status and need of irrigation in Nepal
+        3.3.2 Crops and soils, crop water and irrigation water requirements, water availability for irrigation
+        3.3.3 Irrigation methods (surface, sub-surface, sprinkler and drip), their suitability, advantages and disadvantages
+        3.3.4 Canal types, network and alignment, canal losses, commadarea, duty and delta
+        3.3.5 Silt theories, design of earthen and lined canals, canal standards, specific considerations for hill irrigation
+        3.3.6 Design of irrigation structures on permeable foundation (seepage theories, piping & uplift)
+        3.3.7 Design of weir and barrage (crest, length and thickness of impervious floor)
+        3.3.8 Design of silt control structures (excluder, ejector and settling basin)
+        3.3.9 Design of energy dissipaters (hydraulic jump and stilling basins)
+        3.3.10 Design of river training works (guide bund, levees and spurs), water shed management
+        3.3.11 Design of regulators, drops, cross-drainage and outlets
+        3.3.12 Waterlogging (causes, effects and measures), design of surface and subsurface drainage
+        3.3.13 Planning and Management of Irrigation System
+    3.4 Hydropower
+        3.4.1 Hydropower development in Nepal, policy, acts and regulations
+        3.4.2 Types of hydropower projects (run-off river, peaking rorstorage, and pump storage)
+        3.4.3 Flow duration curve, determination of reservoir capacity, reservoir sedimenataion, useful life of reservoir
+        3.4.4 Power demand analysis and forecast
+        3.4.5 Potential and firm power, maximum power output, firm energy, surplus energy, seasonal energy, and average annual energy
+        3.4.6 Concept of load, load curve, capacity factor, load factor, and utilization factor
+        3.4.7 Power demand variation (daily, weekly, monthly, seasonal, and annual)
+        3.4.8 Layout of reservoir, diversion structures, de-sanding basin, water conveyance system, fore-bay, surge tank, penstock, power house, draft tube, tailrace, switch yard, and auxiliary structures
+        3.4.9 Dam classification and their usage based on functionality, acting forces, and construction material; selection of dam based on construction material, topography, economy and purpose
+        3.4.10 Concrete gravity dams: forces on gravity dams, their line of actions, stability against sliding, overturning, and floating
+        3.4.11 Embankment dams: earth and rock-fill dams; basic design principles, concept of seepage through embankments, considerations in foundation and slope stability
+        3.4.12 Concept of coffer-dam and their usage
+        3.4.13 Design of spillways, types of spillway gates, location, and their functions
+        3.4.14 Energy dissipation methods, types of energy dissipaters, design of stilling basin and aprons
+        3.4.15 Design of intake, trash rack, gravel trap and approach canal
+        3.4.16 Types, location, and usage of de-sanding basin, suspended sediment characteristics, sediment velocities to be considered in de-sanding basin design, design of de-sanding basin, flushing of sediments from de-sanding basin
+        3.4.17 Hydraulic tunnels: pressure and non-pressure tunnels, tunnel cross-section and size, head loss in tunnels, concept of tunnel stability and protection measures, tunnel linings
+        3.4.18 Water hammer, hydrodynamic pressure calculations, design of fore-bay basin
+        3.4.19 Importance, location and application of penstock, anchor blocks and saddle support
+        3.4.20 Underground and surface power houses, power house dimensions and design, tailrace
+        3.4.21 Types and selection of turbines, concept of specific speed, gates and valves, draft tube, need and working principle of governors
+
+## Section (C) - 25 Marks
+
+4.  Transportation Engineering
+    4.1 Highway engineering
+        4.1.1 Highway Planning and Survey
+            Approach to road planning: establishing economic and environmental viability, evaluating alternatives, historical development of road construction in Nepal, classification of roads, national road network of Nepal, road survey and quantity calculation, process of identifying best route location, map study and reconnaissance survey, preliminary and detail survey, recommendation for best alignment, highway alignment and controlling factors, Asian Highway in Nepal and NRS–2045, NRS 2070
+        4.1.2 Geometric Design of Highway
+            Basic design control and criteria: design speed, vehiclecharecteristics, traffic volume & its composition, topography, elements of highway cross section, highway curves: tangents, type of curves, transition curves, reverse curves and their functions, circular curves, super elevation, stopping sight distance, vertical curves, gradients, average gradients and ruling gradient, Crest curve and sag curves, design considerations of horizontal and vertical alignment, extra widening, set back distance
+        4.1.3 Evaluation of subgrade soil
+            Function of subgrade soil, CBR ant its test, group index, plate load test, determination of modulus of subgrade reaction (k), dynamic penetration test and its application
+        4.1.4 Hill Roads
+            Hill road design: speed, sight distance, geological conditions and alignment selection criteria, gradient selection, Hair Pin Bends, horizontal curves, passing lane in hill roads, retaining and slope protection structures in hill roads, use of bio-engineering, drainage structures, stability of formation width and cut and fill slopes
+        4.1.5 Highway Drainage
+            Importance of highway drainage: surface drainage and estimation of water quantity, design of drainage structures, erosion control and dissipating structures, subsurface drainage, cross drainage structures and types
+        4.1.6 Highway Materials
+            Binding materials, types of aggregate and tests on their gradation, strength, durability, mathematical and graphical method of aggregate gradation, binding materials, bitumen, road tar, penetration test, consistency tests, flash point test,composition tests, bituminous mixes and asphalt concrete, open and dense graded mixes, design of asphalt mixes,
+        4.1.7 Traffic Engineering
+            Traffic engineering and scope, interrelationships between human/ machinery/environmental elements, impact of human and vehicular characteristics on traffic planning, traffic operations and regulations driver and vehicle control, traffic control devices, traffic flow counts and speed studies, traffic flow characteristics traffic count and presentation, O and D studies, parking studies and accident study and analysis, basic requirements of intersections, types of intersections and configuration, channelized and unchannelized intersections, design of intersections, traffic signs, signals, road marking, road delination, road lighting, factors influencing night visibility, design of the lighting system, traffic projection and forecasting
+        4.1.8 Road Pavement
+            Types of road pavements, flexible and rigid pavement, loads and other factors controlling pavement, design methods for flexible pavements, design methods for rigid pavements, stress due to load, temperature and sub-grade friction, functions of pavement structure, axle load, damaging factor of axle loads, different types of pavement surface
+        4.1.9 Road Construction Technology
+            Activities and techniques used in road construction, tools, equipment and plants used in road construction, preparation of road subgrade, excavation, filling, compaction, moisture density relationship, field compaction control, soil stabilization, Construction of asphalt concrete layers including prime coat, tack coat, and seal coat, construction procedure of penetration macadam, construction procedure of bituminous bound macadam, construction procedure of plain cement concrete pavements
+        4.1.10 Highway Maintenance, Repair and Rehabilitation
+            Classification of maintenance activities for on road and off roadstructures, inspection, prioritization and planning of maintenance operations, evaluation of pavement distress and pavement condition, types and methods of pavement repair, regular, recurrent, periodic mentinance, types of overlay and strengthening of existing pavements
+    4.2 Airport Engineering
+        4.2.1 Introduction
+            4.2.1.1 History of civil aviation in Nepal
+            4.2.1.2 Role and functions of Ministry of Culture, Tourism and Civil Aviation (MoCTCA) and Civil Aviation Authority of Nepal
+            4.2.1.3 Role of International Civil Aviation Organization (ICAO)
+            4.2.1.4 The economic, political, and social roles of airports
+        4.2.2 Airport Planning
+            4.2.2.1 Planning consideration: Airport and airport systems, airport system planning, airport master plan and strategic plan, information required, preliminary feasibility, role of financing
+            4.2.2.2 Forecasting for planning purpose (Passenger, Aircraft, Cargo, Mail): Inventory and forecasting, factors affecting traffic growth, principles of forecasting, forecasting methods, accuracy and limitations of forecasting
+            4.2.2.3 Airport site evaluation: factors affecting airport location
+            4.2.2.4 Airside development: Physical characteristics runway, taxiway & apron, airport capacity and delay.
+            4.2.2.5 Landside development: Passenger terminal building and Terminal System, Design Considerations, apron-gate system, passenger processing, passenger amenities & baggage handling
+            4.2.2.6 Environment and aviation activities: aircraft noise, air quality in the vicinity of airports, global environment problem arising from airport use, water and soil pollution in the vicinity of airports
+            4.2.2.7 Land-use planning: assessing noise for land-use planning, risk of accident around airports
+        4.2.3 Geometric Design of Aerodrome
+            4.2.3.1 Design of Runways: Definitions, aerodrome reference code, factors affecting the sitting, orientation and number of runway, factors affecting length of runway, actual length of runways, Turning pad runways with stop-ways and clearways, Runway endsaftey area ( RESA) take-off length requirement, landing length requirement, physical characteristics of:runways, runway shoulders, runway strips, clearways, stopways, obstacle limitation surfaces
+            4.2.3.2 Design of taxiways, aprons and holding bays: functional requirements, taxiway width, taxiway curves, junction and intersection, rapid exit taxiways, passenger terminal apron, cargo terminal apron, size of apron, isolated parking bay, need of holding bays and bypasses, types of bypass, size and location of holding bays
+        4.2.4 Design of aerodrome pavement
+            4.2.4.1 Procedure for pavement design [Aircraft Classification Number (ACN), Pavement Classification Number (PCN) method], USA practices: design of flexible and rigid pavements, (FAA's FAARFIELD method), pavement management system, airport pavement evaluation
+        4.2.5 Visual Aids for Navigation
+            4.2.5.1 Operational factors, operating requirements, runway, taxiway and apron marking and lighting, airport signs
+        4.2.6 STOLPort and Heliport
+            4.2.6.1 STOLPort: Physical CharacteristicsofSTOLPorts, importance of STOLPorts in the context of topography of Nepal and their role in the economic development of Nepal
+            4.2.6.2 Heliport: Physical Characteristics of Heliports. Obstacle Limitation Surfaces and Requirement
+        4.2.7 Airport drainage
+            4.2.7.1 Purpose, determination run-off (FAA method), typical drainage layout, sub-surface drainage
+        4.2.8 Aerodrome Certification and Safety Management System
+            4.2.8.1 Introduction to Aerodrome Certification.
+            4.2.8.2 ICAO and Nepal requirements on Certification of Aerodromes.
+            4.2.8.3 Audit and Inspection of Aerodromes for the Certification.
+            4.2.8.4 Introduction to State Safety Program (SSP) and Safety Management System (SMS)
+
+## Section (D) - 20 Marks
+
+5.  Public Health Engineering
+    5.1 Water Supply
+        5.1.1 Introduction
+            Potable, contaminated and wholesome water, typical components of water supply schemes
+        5.1.2 Sources of water
+            Surface source, ground water occurrences and prospecting, chemical characteristics and properties of ground water, recharge of ground water, ground water recovery, tube well design, selection of water sources
+        5.1.3 Quality of water
+            Types and sources of water pollution, effects of pollution (river, lake and reservoir), pollution of ground water,hardness of water, alkalinity in water,living organism in water,water borne diseases,physical, chemical and biological test of water, water quality standard: WHO standard of drinking water quality, Nepal interim standard of drinking water
+        5.1.4 Quantity of water
+            Types of water demand, design period, methods of population forecasting, variation in demand of water, factors affecting demand of water
+        5.1.5 Intake works
+            Site selection of an intake, Characteristics of river reservoir and spring intake, various types of hand pumps including suction hand pump, submersible hand pumps
+        5.1.6 Water treatment
+            Treatment systems: screening, plain sedimentation, sedimentation with coagulation, flocculation, filtration (Slow sand filtration /Rapid filtration), disinfection, softening, and miscellaneous treatments (aeration, removal of iron and manganese, removal of arsenic and removal of colour, odour and taste
+        5.1.7 Reservoirs and distribution systems
+            Types of reservoirs, sizing of reservoirs: mass curve method, peak demand method etc. for reservoir Design, Water supply system: pumping system, gravity system, Layout of the water supply system, Pipeline design: design criteria, design of transmission and distribution system (including pipe net works)
+        5.1.8 Operation and maintenance of water supply system
+            Difference beween maintenance and rehabilitation, Operation of water supply system, Maintenance equipments: wrench
+        5.1.9 Design specific of gravity flow rural water supply system in Nepal
+    5.2 Sanitary Engineering
+        5.2.1 Introduction
+            Importance of waste water and solid waste management, Sanitation system, Types of sewerage systems
+        5.2.2 Quantity of wastewater
+            Sources and nature of wastewater, effluent characteristics, Factors affecting sanitary sewage, Determination of quantity of sanitary sewage, Determination of quantity of storm water
+        5.2.3 Characteristics and examination of sewage
+        5.2.4 Sampling of sewage, Physical, chemical and biological characteristics of sewage, Decomposition of sewage, aerobic and anaerobic decomposition, Biochemical oxidation demand (BOD) and chemical oxidation demand (COD), Test of solids, Dissolved oxygen (DO), pH-value, BOD, COD, chlorine demand
+        5.2.5 Design and construction of sewers
+            Typical design periods, flow velocity, self cleaning velocity, flow diagrams, hydraulic formulae and gradients,Estimation of quantity of sanitary sewage, collection systems, sewer designcriteria, shape of sewers, types of sewers, sewer materials: requirements, salt glazed stoneware, and plain or reinforced cement concrete pipes, plastic, steel, brick, sanitary and storm water sewers for separate and combinedsewer systems, construction of sewer: excavation, laying, jointing of sewer, testing of sewer,water test and air test
+        5.2.6 Sewage treatment
+            Treatment methods,Secondary treatment processes and their types, BOD removal, design criteria, activated sludge, oxidation ponds and ditches, aerated lagoons and lagoons,Sewage filtration, intermittent sand filter, contact bed, trickling filters, bio- filters and design of trickling and bio-filters
+        5.2.7 Sewage disposal
+            Sewage disposal by dilution: essential conditions for dilution, self purification of streams, factors affecting self-purification, the oxygen sag curve (streeter-phelps equation), Sewage treatment by land treatment
+        5.2.8 Sludge treatment and disposal
+            Sources of sludge and necessity of treatment, Aerobic and anaerobic digestion, Methods of sludge treatment: grinding and blending, thickening, stabilization, dewatering, drying, composting and incineration, Methods of sludge disposal: spreading on land, lagooning, dumping and land filling
+        5.2.9 Community participation and introduce following under this heading
+            Users committee, Village maintenance workers, Pre construction/during construction/post construction trainings, Women participation, Community mobilization/participation, Record keeping of WSP, Rehabilitation, Composting toilets, eco-sanitation
+    5.3 Environment
+        5.3.1 General introduction of air pollutants, its causes, impacts and remedial measures
+        5.3.2 Human excreta and its characteristics, pollution caused by excreta
+        5.3.3 Health aspects of water supply and sanitation
+        5.3.4 Green house effects, its impacts and remedial measures
+        5.3.5 Solid waste management,Types and characteristics of solid waste
+        5.3.6 Garbage collection and disposal
+        5.3.7 Methods of solid waste disposal: dumping, sanitary landfill, incineration and composting
+        5.3.8 Concept of environmental assessment:Initial environmental examination (IEE), Environment impact assessment (EIA), role of EIA, Types of environmental impacts, and EIA principles
+        5.3.9 Government rules and regulations and procedures for EIA
+
+प्रथम चरणको लिखित परीक्षाबाट छनौट भएका उम्मेदवारहरुलाई मात्र
+लिइने सामूहिक परीक्षण (Group Test) को लागि
+
+## सामूहिक छलफल (Group Discussion)
+
+यस प्रयोजनको लागि गरिने परीक्षण १० पूर्णाङ्क र ३० मिनेट अवधिको हुनेछ जुन नेता विहिन सामूहिक छलफल (Leaderless Group Discussion) को रुपमा अवलम्वन गरिने छ । दिइएको प्रश्न वा Topic का विषयमा पालैपालोसँग निर्दिष्ट समय भित्र समूह वीच छलफल गर्दै प्रत्येक उम्मेदवारले व्यक्तिगत प्रस्तुति (Individual Presentation) गर्नु पर्नेछ । यस परीक्षणमा मूल्याङ्कनको लागि देहाय अनुसारको ३ जनाको समिति रहनेछ ।
+
+*   आयोगका अध्यक्ष वा सदस्य - अध्यक्ष
+*   मनोविज्ञ - सदस्य
+*   दक्ष/विज्ञ (१ जना) - सदस्य
+
+## सामूहिक छलफलमा दिइने नमुना प्रश्न वा Topic
+
+उदाहरणको लागि - उर्जा संकट, गरीबी निवारण, स्वास्थ्य बीमा, खाद्य सुरक्षा, प्रतिभा पलायन जस्ता Topics मध्ये कुनै एक Topic मात्र दिइनेछ ।`;
+
+const BOOK_TOC_MD =`# Contents
+
+## Section A
+
+### Chapter 1 STRUCTURAL ENGINEERING
+1.1 DIFFERENT CONCRETE STRUCTURES
+    1.1.1 Difference between working stress and limit state philosophy 3
+    1.1.2 Working stress method 4
+    1.1.3 Limit state method 6
+1.2 Design and analysis of RC beam in bending 10
+1.3 Design and analysis of RC beam in shear 18
+1.4 Design and analysis of RC beam in bond and end anchorage 25
+1.5 Design of RC beam and slabs in bending, shear, deflection, bond and end anchorage 29
+1.6 Design of axially loaded columns 40
+1.7 Design of column with bending 41
+1.8 Introduction to pre-stressed concrete 51
+1.9 TIMBER STRUCTURES 61
+    1.9.1 Standards and built-up sections 61
+    1.9.2 Design of rivet connection 65
+    1.9.3 Design of bolt connection 68
+    1.9.4 Design of welded connections 70
+    1.9.5 Eccentric connection 72
+    1.9.6 Design of tension member (TES) 74
+    1.9.7 Design of compression member (TES) 81
+    1.9.8 Design of beam 86
+    1.9.9 Column bases and column splices 92
+    1.9.10 Design principles of timber beams and columns 95
+1.3 REQUIREMENTS OF EARTHQUAKE RESISTANT BUILDING CONSTRUCTION 99
+    1.3.1 Factors to be considered for earthquake resistant building construction 99
+    1.3.2 Planning earthquake resistance of tall buildings 100
+1.4 REGULATORY RULE OF THUMBS IN BUILDING DESIGN 101
+1.5 STRUCTURAL DESIGN OF BRIDGE 104
+    1.5.1 Structural designs of various types of bridges 104
+        1.5.1.1 Components of bridge 104
+        1.5.1.2 Types of bridges and their classification 104
+            1.5.1.2.1 Types of bridges based on the type of super structure 105
+            1.5.1.2.2 Types of bridges based on level of roadway 105
+            1.5.1.2.3 Types of bridges based on function 105
+            1.5.1.2.4 Types of bridges based on utility 105
+            1.5.1.2.5 Types of bridges based on material of flow 105
+            1.5.1.2.6 Types of bridges based on high flood level (HFL) 105
+            1.5.1.2.7 According to the span length of bridge 105
+            1.5.1.2.8 According to the support conditions 106
+            1.5.1.2.9 According to the profile of roadway 106
+        1.5.1.3 Solid slab bridge 106
+        1.5.1.4 T-beam bridge 106
+        1.5.1.5 Arch truss bridge 106
+        1.5.1.6 Truss bridge 106
+        1.5.1.7 Cable bridge 106
+        1.5.1.8 Frame bridge 106
+        1.5.1.9 Suspension bridge 106
+        1.5.1.10 Cantilevered bridge 106
+    1.5.2 Selection of bridge type 106
+        1.5.2.1 Criteria for selection of ideal bridge site 107
+        1.5.2.2 Economical span length of bridge 107
+    1.5.3 Analysis of forces and stresses 108
+        1.5.3.1 Longitudinal forces 108
+        1.5.3.2 Tractive forces 108
+        1.5.3.3 Horizontal water current forces 108
+        1.5.3.4 Lateral loads 109
+        1.5.3.5 Load combinations in the design of bridge 109
+    1.5.4 Types of loading 109
+        1.5.4.1 Dead load 109
+        1.5.4.2 Live load 110
+        1.5.4.3 Impact load 111
+    1.5.5 General design requirements 112
+        1.5.5.1 Traffic study 112
+        1.5.5.2 Hydrological study 113
+        1.5.5.3 Geographic study 113
+        1.5.5.4 Width of road way and footway 113
+    1.5.6 Bridge response 113
+        1.5.6.1 Longitudinal bending moment 113
+        1.5.6.2 Longitudinal shear 114
+        1.5.6.3 Transverse bending moment 114
+    1.5.7 Method of lateral load distribution in bridge deck girder analysis 114
+    1.5.8 Effective width method of lateral load distribution 114
+        1.5.8.1 Effective width of slab 114
+        1.5.8.2 Effective width of cantilever slab 115
+    1.5.9 Orthotropic method of lateral load distribution 116
+    1.5.10 Method of distribution coefficient 116
+    1.5.11 Transverse bending moment by distribution coefficient method 118
+    1.5.12 Design of beam bridge 120
+    1.5.13 Analysis of restrained slab by pigeaud's method 120
+
+### Chapter 2 GEOTECHNICAL ENGINEERING
+2.1 Soil Exploration
+    2.1.1 Classification and classification of soil 123
+    2.1.2 Factors affecting soil exploration 123
+    2.1.3 Descriptive soil classification 123
+    2.1.4 Unified soil classification 124
+    2.1.5 Indian standard soil classification 124
+    2.1.6 Soil system of classification 124
+    2.1.7 AASHTO soil classification 124
+    2.1.8 System (USCS) 125
+2.2 Permeability of soil
+    2.2.1 Factors affecting permeability 126
+    2.2.2 Determination of coefficient 126
+        2.2.2.1 Field tests 127
+        2.2.2.2 Laboratory methods 128
+        2.2.2.3 Pumping test 129
+2.3 Effective stress 130
+    2.3.1 Factors affecting effective stress 131
+    2.3.2 Ordinary case 132
+    2.3.3 Quick sand condition 133
+2.4 Seepage through soil 136
+    2.4.1 Flow net 137
+    2.4.2 Construction of flow net 137
+    2.4.3 Seepage below concrete dam 138
+    2.4.4 Seepage stability check 140
+    2.4.5 Seepage analysis through method of electrical analogy 140
+    2.4.6 Techniques to reduce seepage 141
+    2.4.7 Uplift pressure of water 142
+2.5 Compaction of soil 144
+    2.5.1 Concept of compaction 144
+    2.5.2 Types 144
+    2.5.3 Factor affecting compaction 145
+    2.5.4 Laboratory compaction 145
+    2.5.5 Field control of compaction 146
+    2.5.6 Method of compaction in field 146
+    2.5.7 And their suitability 147
+    2.5.8 Special problems to be considered for compaction in road, earth dam 148
+2.6 Shear strength of soils 150
+    2.6.1 Concept of shear strength 150
+    2.6.2 Mohr-Coulomb theory of shear strength 150
+    2.6.3 Principle planes and principal stresses 151
+    2.6.4 Orientation of normal stress and shear stress at different plane 151
+    2.6.5 Relation between principle and failure condition 152
+    2.6.6 Types of shear tests 152
+    2.6.7 Direct shear test 152
+    2.6.8 Unconfined compression test 153
+    2.6.9 Triaxial test 154
+    2.6.10 Vane shear test 155
+2.7 Consolidation and settlements 156
+    2.7.1 Concept of consolidation 156
+    2.7.2 Types of consolidation 158
+    2.7.3 Test of consolidation 159
+    2.7.4 NC, OC, OCR 159
+    2.7.5 Pre-consolidation pressure 160
+    2.7.6 Settlement in structures resting 160
+    2.7.7 In different soil 160
+        2.7.7.1 Nature of settlement 162
+        2.7.7.2 Causes of settlement 162
+        2.7.7.3 Remedial measures 163
+2.8 Stability of slopes 168
+    2.8.1 Causes of slope failures 168
+    2.8.2 Typical surface and slope failures 169
+    2.8.3 Method of slope analysis 170
+    2.8.4 Bearing number 172
+    2.8.6 Bio engineering: advantages, concept, components and uses in stabilization of slopes 174
+        2.8.6.1 Advantages and limitation of bio-engineering 174
+        2.8.6.2 Basic principles of soil bioengineering 174
+        2.8.6.3 Bio-engineering techniques to control slope failures (Erosion control) 175
+        2.8.6.4 Components of bioengineering 175
+        2.8.6.5 Types of bioengineering 176
+2.9 FOUNDATION ENGINEERING 179
+    2.9.1 Introduction 179
+    2.9.2 Types of foundation 180
+    2.9.3 Factors affecting on selection of foundation 180
+    2.9.4 Requirement and criteria of ideal foundation 180
+    2.9.5 Types of load for design of foundation 180
+    2.9.6 Criteria for selection of depth of foundation 181
+    2.9.7 Earth pressure and retaining structures 182
+    2.9.8 Types of earth pressure 182
+    2.9.9 Coulomb's earth pressure theory 182
+    2.9.10 Coulomb's earth pressure theory 188
+    2.9.11 Wall weight theory 189
+    2.9.12 Types of retaining wall 189
+    2.9.13 Stability analysis of earth retaining structures 189
+    2.9.14 Techniques to increase stability of retaining wall 190
+    2.9.15 Bearing capacity and settlements 200
+        2.9.15.1 Types of bearing capacity 200
+        2.9.15.2 Models of foundation failure/ type of shear failure 200
+        2.9.15.3 Terzaghi's general bearing capacity theory 201
+        2.9.15.4 Factors influencing bearing capacity in foundation / various factors on bearing capacity 202
+        2.9.15.5 Ultimate bearing capacity of cohesionless soil 204
+        2.2.3.6 Ultimate bearing capacity of cohesive soil 204
+        2.2.3.7 Types of settlement 205
+        2.2.3.8 Effects of settlement 205
+        2.2.3.9 Settlement of structures and foundation in the proportion to footing 205
+2.2.4 Types of foundation and their suitability 211
+    2.2.4.1 Foundation condition to use spread or combined footing 211
+    2.2.4.2 Mat foundation 211
+        2.2.4.2.1 Condition to use mat foundation 211
+        2.2.4.2.2 Types of mat foundation 211
+    2.2.4.3 Design and construction of mat foundation 213
+        2.2.4.3.1 Floating mat 213
+        2.2.4.3.2 Compensating mat 213
+    2.2.4.3 Pile 214
+        2.2.4.3.1 Types of pile 214
+        2.2.4.3.2 Construction approach 215
+        2.2.4.3.3 Load carrying capacity of a single pile 217
+    2.2.4.4 Spacing between pile 218
+    2.2.4.5 Pier and caisson 218
+        2.2.4.5.1 Types of caisson 219
+        2.2.4.5.2 Bearing capacity 219
+        2.2.4.5.3 Construction of well foundation 219
+        2.2.4.5.4 Tilt and shift in well foundation 220
+        2.2.4.5.5 And prevention 221
+2.2.5 Design of foundation 221
+    2.2.5.1 Design of spread footing 221
+    2.2.5.2 Design of combined footing 223
+    2.2.5.3 Design of strap footing 225
+    2.2.5.4 Design of mat 226
+    2.2.5.5 Design of pile foundation 228
+    2.2.5.6 Design of well foundation 234
+2.2.6 Foundation stabilization 237
+    2.2.6.1 Basic and chemical process 237
+    2.2.6.2 Soil stabilization 238
+    2.2.6.3 Stone column 238
+    2.2.6.4 Grouting 238
+    2.2.6.5 Dynamic deep 239
+    2.2.6.6 Grouting and its method 239
+    2.2.6.7 Soil nail and soil anchoring 239
+2.3 SITE INVESTIGATION AND MONITORING 243
+    2.3.1 Scope of site investigation 243
+    2.3.2 And exploration 243
+    2.3.3 Purpose of site 243
+    2.3.4 Investigation 243
+    2.3.5 Planning of investigation 243
+    2.3.6 Stages of investigation 243
+    2.3.7 Methods of boring 243
+    2.3.8 Type of soil samples 246
+2.3.9 Test 246
+    2.3.9.1 Standard penetration test (SPT) 246
+    2.3.9.2 Dynamic cone penetration test (CPT) 246
+    2.3.9.3 Correction of n value 246
+    2.3.9.4 Determination of bearing capacity using n value for spread footing 247
+    2.3.9.5 Determination of bearing capacity using n value for mat foundation 247
+    2.3.9.6 Determination of bearing capacity using n value for pile foundation 247
+    2.3.9.7 Determination of bearing capacity using n value for well foundation 248
+    2.3.9.8 Plate load test 248
+    2.3.9.9 Load tests 249
+2.3.10 Preparation of site investigation report 250
+
+## Section B
+
+### Chapter 3 WATER RESOURCE ENGINEERING 259
+3.1 Hydrology and sediment 259
+    3.1.1 Rainfall measurements and related analysis 259
+    3.1.2 Precipitation, flood routing curve and generation of flow data 265
+    3.1.3 Estimation of long term daily, and monthly flow data 270
+    3.1.4 Hydrograph analysis synthetic unit hydrograph 271
+        3.1.4.1 Hydrograph analysis 271
+        3.1.4.2 Synthetic unit hydrographs 275
+    3.1.5 Flood frequency analysis and estimation of design flood 275
+    3.1.6 Collection of sediment data, sediment rating curve, estimation of sediment yield and concentration, reservoir sedimentation 280
+    3.1.7 Ground water hydrology 281
+        3.1.7.1 Properties of subsurface water 282
+        3.1.7.2 Types of aquifer 283
+        3.1.7.3 Aquifer properties 283
+        3.1.7.4 Ground water movement-darcy's law 284
+        3.1.7.5 Well hydraulics 286
+3.2 HYDRAULICS 286
+    3.2.1 Fluid pressure 286
+        3.2.1.1 Atmospheric, gauge and absolute pressure 286
+        3.2.1.2 Hydro kinematics 287
+        3.2.1.3 Modes of describing fluid motion 287
+        3.2.1.4 Types of fluid flow 287
+        3.2.1.5 Description of fluid flow pattern (flow visualization) 288
+        3.2.1.6 Basic principle of fluid flow 289
+        3.2.1.7 Continuity equation 289
+        3.2.1.8 Velocity potential and stream function 289
+        3.2.1.9 Dynamics of flow 290
+    3.2.2 Boundary layers 291
+    3.2.3 Bernoulli's equation and its applications 293
+    3.2.4 Laminar and turbulent flow in pipes 294
+        3.2.4.1 Laminar flow in pipes 294
+    3.2.5 Concept of specific energy 300
+    3.2.6 Gradually varied flow in open channel 301
+        3.2.6.1 Dynamic equation of gradually varied flow 301
+    3.2.7 Hydraulic jump and its type 308
+        3.2.7.1 Types of hydraulic jump 308
+3.3 IRRIGATION 309
+    3.3.1 Function, advantages and disadvantages of irrigation; status and need of irrigation in Nepal 309
+        3.3.1.1 Functions of irrigation water 309
+        3.3.1.2 Advantages and disadvantages of irrigation 309
+        3.3.1.3 Status and need of irrigation in Nepal 310
+    3.3.2 Crops and soil, crop water and irrigation water requirements, water availability and irrigation 310
+    3.3.3 Irrigation methods (surface, sub-surface, sprinkler and drip), their suitability, advantages and disadvantages 314
+    3.3.4 Irrigation structures (diversion, canal, losses, command area, duty and delta 317
+        3.3.4.1 Command area, duty and delta 317
+        3.3.4.2 Canal types, network and alignment 325
+        3.3.4.3 Canal losses 327
+    3.3.5 Silt theories, design of earthen and lined canals, canal standards, specific consideration for hill irrigation 327
+    3.3.6 Design of weirs of barrages (crest length and thickness of impervious flow 335
+    3.3.7 Design of irrigation structures on permeable foundation (seepage theories, piping and uplift) 338
+    3.3.8 Design of silt control structures (excluder, ejector and settling basins) 344
+    3.3.9 Design of energy dissipaters (hydraulic jump and stilling basins) 345
+    3.3.10 Design of river training works (guide bund, levees and spurs), water shed management 347
+    3.3.11 Design of regulators, drops, cross-drainage and outlets 352
+        3.3.11.1 Design of regulators 352
+        3.3.11.2 Design of drops 356
+        3.3.11.3 Design of cross-drainage works 358
+    3.3.12 Water logging (causes, effects and measures), design of surface and subsurface drainage 369
+    3.3.13 Planning and management of irrigation system 374
+3.4 HYDROPOWER 376
+    3.4.1 Hydropower development in Nepal, policy, act and regulation 376
+        3.4.1.1 Hydropower development in Nepal 376
+        3.4.1.2 Policy, act and regulations on hydropower 376
+    3.4.2 Types of hydropower project (run-off river, peaking, storage and pump storage) 376
+    3.4.3 Flow duration curve, determination of reservoir capacity, reservoir sedimentation, useful life of reservoir 377
+        3.4.3.1 Flow duration curve 377
+        3.4.3.2 Determination of reservoir capacity 378
+        3.4.3.3 Reservoir sedimentation 379
+        3.4.3.4 Useful life of reservoir 379
+    3.4.4 Power demand analysis and forecast 380
+    3.4.5 Potential and firm power, maximum power output, firm energy, surplus energy, seasonal energy and annual energy 380
+    3.4.6 Concept of load, load curve, capacity factor, and plant and utilization factor 381
+    3.4.7 Power demand variation (daily, weekly, seasonal and annual) 382
+    3.4.8 Layout of run-of-river and storage hydropower projects, components of run-of-river, peaking run-of-river and storage type projects 382
+        3.4.8.1 Layout of different types of hydropower projects 382
+    3.4.9 Dam classification 383
+        3.4.9.1 Classification 383
+        3.4.9.2 Principal variants of concrete and embankment dams 385
+    3.4.10 Loads on dams and their combinations 385
+        3.4.10.1 Load combination 387
+        3.4.10.2 Normal stresses in different case 389
+        3.4.10.3 Principle and shear stresses 390
+        3.4.10.4 Elementary profile of gravity dam 390
+        3.4.10.5 Modes of failure and criteria for structure stability of gravity dam 392
+        3.4.10.6 Stability analysis in gravity dam 393
+        3.4.10.7 Foundation treatment of gravity dam 394
+        3.4.10.8 Drainage (or foundation drainage) in gravity dam 394
+    3.4.11 Embankment dams: earth and rock fill dams: basic design principle, concept of seepage through embankments, consideration in foundation and slope stability 394
+        3.4.11.1 Design criteria for earthen dam 394
+        3.4.11.2 Seepage analysis in earthen dam 398
+    3.4.12 Concept of coffer dam and their uses 402
+    3.4.13 Design of spillways: types of spillway gates, design and their functions 403
+    3.4.14 Energy dissipation methods, types of energy dissipations, design of stilling basin and apron 404
+        3.4.14.1 Energy dissipator 404
+        3.4.14.2 Types of energy dissipators 405
+        3.4.14.3 Design concepts of stilling basin and apron 406
+    3.4.15 Design of intake trash rack, gravel trap and approach canal 407
+    3.4.16 General arrangement of intake 407
+        3.4.16.1 General arrangement of intake 407
+        3.4.16.2 Types of intake 407
+        3.4.16.3 Design of side intake 409
+        3.4.16.4 Trash rack for side intake 410
+        3.4.16.5 Design of bottom intake 410
+        3.4.16.6 Prevention against silt (sediment) and floating debris and ice in intake 411
+    3.4.17 Types, location and usage of de-sanding basin, suspended sediment characteristics, sediment velocities to be considered in de-sanding basin 411
+    3.4.18 Design of de-sanding basin, flushing of sediments from de-sanding basin 412
+        3.4.18.1 Types of de-sanding basin based on flushing operation 412
+        3.4.18.2 Flushing and discharge 413
+    3.4.19 Design of surge tank and non-pressure tunnel, tunnel, tunnel cross-section and size, head loss in tunnel, concept of stability and protection measures, tunnel safety 417
+        3.4.19.1 Hydraulic tunnel 417
+    3.4.20 Hydropower development in Nepal, pressure calculations, design of fore-bay basin 420
+        3.4.20.1 Hydraulic transit (water hammer) 420
+        3.4.20.2 Forebay (headpond) 422
+    3.4.21 Importance, location and application of penstock, anchor block and saddle support 423
+    3.4.22 Underground and surface power house 424
+        3.4.22.1 Powerhouse structure 424
+        3.4.22.2 Power house dimension 424
+        3.4.22.3 Design of powerhouse 425
+    3.4.21 Types and selection of turbines, concept of specific speed, speed, unit, gates, draft tube, need and working principle of governor 426
+        3.4.21.1 Types and selection of turbines 426
+        3.4.21.2 Concept of specific speed 427
+        3.4.21.3 Gate and valve 427
+        3.4.21.4 Draft tube 427
+        3.4.21.5 Need and working principle of governor 428
+
+## Section C
+
+### Chapter 4 TRANSPORTATION ENGINEERING 440
+4.1 HIGHWAY ENGINEERING 440
+    4.1.1 Highway planning and survey 442
+    4.1.2 Geometric design of highway 445
+    4.1.3 Evaluation of sub-grade soil 460
+    4.1.4 Pavement design 463
+    4.1.5 Highway drainage 472
+    4.1.6 Highway materials 477
+    4.1.7 Traffic engineering 486
+    4.1.8 Road pavement 507
+    4.1.9 Road construction technology 528
+    4.1.10 Highway maintenance, repair and rehabilitation 535
+4.2 AIRPORT ENGINEERING 540
+    4.2.1 Introduction 540
+    4.2.1.1 History of civil aviation in Nepal 540
+    4.2.1.2 Role and functions of ministry of culture, tourism and civil 540
+    4.2.1.3 Role of international civil aviation organization (ICAO) 540
+    4.2.1.4 The economic, political, and social roles of airports 541
+    4.2.1.5 Types of airports 542
+    4.2.2 Airport planning 542
+    4.2.3 Geometric design of aerodrome 545
+        4.2.3.1 Runway length 549
+        4.2.3.2 Typical layout of airport 568
+    4.2.4 Design of aerodrome pavement 572
+    4.2.5 Visual aids for navigation 577
+    4.2.6 Stolports and heliport 578
+    4.2.7 Aerodrome certification and safety management system 579
+
+## Section D
+
+### Chapter 5 PUBLIC HEALTH ENGINEERING 586
+5.1 WATER SUPPLY 586
+    5.1.1 Introduction 588
+    5.1.2 Sources of water 595
+    5.1.3 Quality of water 605
+    5.1.4 Quantity of water 610
+    5.1.5 Intake works 618
+    5.1.6 Water treatment 634
+    5.1.7 Reservoirs and distribution systems 642
+    5.1.8 Operation and maintenance of water supply system 642
+    5.1.9 Design principle of gravity flow rural water supply system in Nepal 643
+5.2 SANITARY ENGINEERING 649
+    5.2.1 Introduction 649
+    5.2.2 Quantity of wastewater 651
+    5.2.3 Characteristics and examination of sewage 655
+    5.2.4 Design and construction of sewers 659
+    5.2.5 Sewage treatment 668
+    5.2.6 Sewage disposal 681
+    5.2.7 Sludge treatment and disposal 687
+5.3 ENVIRONMENT 693
+    5.3.1 General introduction of air pollutants, its causes, impacts and remedial measures 693
+    5.3.2 Human excreta and its characteristics, pollution caused by excreta 694
+    5.3.3 Health aspects of water supply and sanitation 694
+    5.3.4 Green house effects, its impacts and remedial measures 695
+    5.3.5 Solid waste management, types and characteristics of solid waste 696
+    5.3.6 Garbage collection and disposal 697
+    5.3.7 Methods of solid waste disposal: dumping, sanitary landfill, incineration and composting 697
+    5.3.8 Concept of environmental assessment: initial environmental examination (IEE), environment impact assessment (EIA), role of EIA, types of environmental impacts, and EIA principles 699
+        5.3.8.1 IEE, EIA and BIS 701
+        5.3.8.2 Types of environmental impacts 701
+        5.3.8.3 Principle of EIA 701
+        5.3.8.4 Environmental protection regulation, 2077 702`;
+
+// RE-DEFINING THE INSTRUCTIONS OBJECT TO SPLIT THE MODES
